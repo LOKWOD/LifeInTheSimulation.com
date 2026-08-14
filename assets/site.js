@@ -1,0 +1,1 @@
+const menu=document.querySelector('.menu');const nav=document.querySelector('.site-header nav');if(menu&&nav)menu.addEventListener('click',()=>nav.classList.toggle('open'));function subscribe(e){e.preventDefault();const note=document.getElementById('form-note');if(note)note.textContent='Signal received. Newsletter delivery will be activated soon.';return false;}
