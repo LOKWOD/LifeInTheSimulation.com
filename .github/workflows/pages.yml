@@ -23,14 +23,22 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Assemble polished site
+        run: |
+          mkdir -p _site
+          cat .site-bundle/part-* | base64 --decode | tar -xz -C _site
+          test -f _site/index.html
+          echo "Prepared $(find _site -type f | wc -l) site files"
+
       - name: Configure Pages
         uses: actions/configure-pages@v5
-        with:
-          enablement: true
+
       - name: Upload site
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: _site
+
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
