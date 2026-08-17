@@ -3,9 +3,6 @@ name: Deploy Life in the Simulation
 on:
   push:
     branches: [main]
-  workflow_run:
-    workflows: ["pages build and deployment"]
-    types: [completed]
   workflow_dispatch:
 
 permissions:
@@ -66,9 +63,9 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
-      - name: Let the branch publisher finish first
+      - name: Let GitHub's branch publisher finish first
         if: github.event_name == 'push'
-        run: sleep 45
-      - name: Deploy polished site
+        run: sleep 75
+      - name: Deploy generated site to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
