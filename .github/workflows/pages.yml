@@ -59,6 +59,8 @@ jobs:
                   raise SystemExit(f"Analytics verification failed for {path}")
               path.write_text(html, encoding="utf-8")
           print(f"Cloudflare Web Analytics verified on {len(html_files)} HTML pages")
+      - name: Inject website visitor light beacon
+        run: node scripts/inject-visitor-beacon.mjs _site life-in-the-simulation
       - name: Install generated publication into main
         run: |
           cp -a _site/. .
