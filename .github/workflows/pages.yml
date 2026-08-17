@@ -29,12 +29,19 @@ jobs:
         with:
           ref: main
 
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
       - name: Assemble polished site
         run: |
           mkdir -p _site
           cat .site-bundle/part-* | base64 --decode | tar -xz -C _site
           test -f _site/index.html
           echo "Prepared $(find _site -type f | wc -l) site files"
+
+      - name: Generate expanded essay and field-guide library
+        run: node scripts/generate-expansion.mjs _site
 
       - name: Inject Cloudflare Web Analytics
         shell: python
