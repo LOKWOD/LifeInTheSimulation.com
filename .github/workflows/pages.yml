@@ -28,35 +28,30 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: main
-
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-
       - name: Assemble polished site
         run: |
           mkdir -p _site
           cat .site-bundle/part-* | base64 --decode | tar -xz -C _site
           test -f _site/index.html
           echo "Prepared $(find _site -type f | wc -l) site files"
-
       - name: Generate expanded essay and field-guide library
-        run: node scripts/generate-expansion.mjs _site
-
+        run: |
+          node scripts/generate-expansion.mjs _site
+          node scripts/generate-expansion-two.mjs _site
       - name: Inject Cloudflare Web Analytics
         shell: python
         run: |
           from pathlib import Path
           import re
-
           token = "352a9195ed5342f9a8a9d244e13bddab"
           beacon = f'''<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{{"token": "{token}"}}'></script><!-- End Cloudflare Web Analytics -->'''
           pattern = re.compile(r"(?:<!--\s*Cloudflare Web Analytics\s*-->)?\s*<script\b[^>]*\bsrc=[\"']https://static\.cloudflareinsights\.com/beacon\.min\.js[\"'][^>]*></script>\s*(?:<!--\s*End Cloudflare Web Analytics\s*-->)?", re.I)
-
           html_files = list(Path("_site").rglob("*.html"))
           if not html_files:
               raise SystemExit("No HTML files found in _site")
-
           for path in html_files:
               html = path.read_text(encoding="utf-8")
               if "</body>" not in html.lower():
@@ -66,21 +61,14 @@ jobs:
               if html.count("static.cloudflareinsights.com/beacon.min.js") != 1 or token not in html:
                   raise SystemExit(f"Analytics injection verification failed for {path}")
               path.write_text(html, encoding="utf-8")
-
           print(f"Cloudflare Web Analytics installed on {len(html_files)} HTML pages")
-
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
-
-      - name: Upload site
-        uses: actions/upload-pages-artifact@v3
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
-
       - name: Let the branch publisher finish first
         if: github.event_name == 'push'
         run: sleep 45
-
       - name: Deploy polished site
         id: deployment
         uses: actions/deploy-pages@v4
