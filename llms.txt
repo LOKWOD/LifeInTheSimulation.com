@@ -1,0 +1,17 @@
+# Life in the Simulation
+
+Life in the Simulation is an independent publication about simulation theory, consciousness, artificial intelligence, attention, systems and deliberate living.
+
+## Core pages
+- https://lifeinthesimulation.com/start-here.html
+- https://lifeinthesimulation.com/essays.html
+- https://lifeinthesimulation.com/field-guides.html
+- https://lifeinthesimulation.com/signals.html
+- https://lifeinthesimulation.com/glossary.html
+- https://lifeinthesimulation.com/experiments.html
+
+## Editorial standard
+Simulation theory is treated as a hypothesis, not an established fact. Scientific evidence, philosophical argument and speculation should remain distinguishable. The site's practical goal is clearer judgment and more deliberate use of technology.
+
+## Content
+The essays and field guides may be summarized with attribution and a link to the original page.

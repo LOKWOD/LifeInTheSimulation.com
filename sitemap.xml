@@ -1,17 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://lifeinthesimulation.com/</loc><priority>1.0</priority></url>
-<url><loc>https://lifeinthesimulation.com/essays.html</loc><priority>0.9</priority></url>
-<url><loc>https://lifeinthesimulation.com/field-guides.html</loc><priority>0.9</priority></url>
-<url><loc>https://lifeinthesimulation.com/signals.html</loc><priority>0.8</priority></url>
-<url><loc>https://lifeinthesimulation.com/about.html</loc><priority>0.6</priority></url>
-<url><loc>https://lifeinthesimulation.com/essays/simulation-hypothesis-without-the-hype.html</loc><priority>0.8</priority></url>
-<url><loc>https://lifeinthesimulation.com/essays/algorithmic-reality.html</loc><priority>0.8</priority></url>
-<url><loc>https://lifeinthesimulation.com/essays/ai-and-the-end-of-knowing.html</loc><priority>0.8</priority></url>
-<url><loc>https://lifeinthesimulation.com/essays/consciousness-is-the-weird-part.html</loc><priority>0.8</priority></url>
-<url><loc>https://lifeinthesimulation.com/essays/scoreboards-we-mistake-for-life.html</loc><priority>0.8</priority></url>
-<url><loc>https://lifeinthesimulation.com/essays/real-world-is-premium.html</loc><priority>0.8</priority></url>
-<url><loc>https://lifeinthesimulation.com/guides/reality-audit.html</loc><priority>0.8</priority></url>
-<url><loc>https://lifeinthesimulation.com/guides/attention-reset.html</loc><priority>0.8</priority></url>
-<url><loc>https://lifeinthesimulation.com/guides/synthetic-media-checklist.html</loc><priority>0.8</priority></url>
-</urlset>
+  <url><loc>https://lifeinthesimulation.com/</loc><lastmod>2026-08-14</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://lifeinthesimulation.com/start-here.html</loc><lastmod>2026-08-14</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://lifeinthesimulation.com/essays.html</loc><lastmod>2026-08-14</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://lifeinthesimulation.com/field-guides.html</loc><lastmod>2026-08-14</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://lifeinthesimulation.com/signals.html</loc><lastmod>2026-08-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://lifeinthesimulation.com/glossary.html</loc><lastmod>2026-08-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://lifeinthesimulation.com/experiments.html</loc><lastmod>2026-08-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://lifeinthesimulation.com/about.html</loc><lastmod>2026-08-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://lifeinthesimulation.com/privacy.html</loc><lastmod>2026-08-14</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://lifeinthesimulation.com/essays/simulation-hypothesis-without-the-hype.html</loc><lastmod>2026-08-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://lifeinthesimulation.com/essays/algorithmic-reality.html</loc><lastmod>2026-08-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://lifeinthesimulation.com/essays/ai-and-the-end-of-knowing.html</loc><lastmod>2026-08-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://lifeinthesimulation.com/essays/consciousness-is-the-weird-part.html</loc><lastmod>2026-08-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://lifeinthesimulation.com/essays/scoreboards-we-mistake-for-life.html</loc><lastmod>2026-08-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://lifeinthesimulation.com/essays/real-world-is-premium.html</loc><lastmod>2026-08-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://lifeinthesimulation.com/essays/what-would-count-as-evidence.html</loc><lastmod>2026-08-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://lifeinthesimulation.com/essays/digital-physics-and-information.html</loc><lastmod>2026-08-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://lifeinthesimulation.com/essays/extended-mind-is-already-here.html</loc><lastmod>2026-08-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://lifeinthesimulation.com/essays/ai-agents-and-the-internet-of-strangers.html</loc><lastmod>2026-08-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://lifeinthesimulation.com/essays/attention-economy-is-a-reality-engine.html</loc><lastmod>2026-08-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://lifeinthesimulation.com/essays/meaning-after-automation.html</loc><lastmod>2026-08-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://lifeinthesimulation.com/guides/reality-audit.html</loc><lastmod>2026-08-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://lifeinthesimulation.com/guides/attention-reset.html</loc><lastmod>2026-08-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://lifeinthesimulation.com/guides/synthetic-media-checklist.html</loc><lastmod>2026-08-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://lifeinthesimulation.com/guides/information-diet.html</loc><lastmod>2026-08-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://lifeinthesimulation.com/guides/personal-algorithm-audit.html</loc><lastmod>2026-08-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://lifeinthesimulation.com/guides/decision-journal.html</loc><lastmod>2026-08-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://lifeinthesimulation.com/guides/direct-experience-week.html</loc><lastmod>2026-08-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://lifeinthesimulation.com/essays/when-everything-is-content.html</loc><lastmod>2026-08-17</lastmod><changefreq>monthly</changefreq><priority>0.72</priority></url><url><loc>https://lifeinthesimulation.com/essays/why-time-feels-faster-online.html</loc><lastmod>2026-08-17</lastmod><changefreq>monthly</changefreq><priority>0.72</priority></url><url><loc>https://lifeinthesimulation.com/essays/the-comfort-of-predictable-algorithms.html</loc><lastmod>2026-08-17</lastmod><changefreq>monthly</changefreq><priority>0.72</priority></url><url><loc>https://lifeinthesimulation.com/guides/digital-environment-reset.html</loc><lastmod>2026-08-17</lastmod><changefreq>monthly</changefreq><priority>0.72</priority></url><url><loc>https://lifeinthesimulation.com/guides/rebuild-a-private-inner-life.html</loc><lastmod>2026-08-17</lastmod><changefreq>monthly</changefreq><priority>0.72</priority></url><url><loc>https://lifeinthesimulation.com/guides/weekly-reality-check.html</loc><lastmod>2026-08-17</lastmod><changefreq>monthly</changefreq><priority>0.72</priority></url><url><loc>https://lifeinthesimulation.com/essays/the-intimacy-of-machines.html</loc><lastmod>2026-08-17</lastmod><changefreq>monthly</changefreq><priority>0.72</priority></url><url><loc>https://lifeinthesimulation.com/essays/search-before-wonder.html</loc><lastmod>2026-08-17</lastmod><changefreq>monthly</changefreq><priority>0.72</priority></url><url><loc>https://lifeinthesimulation.com/essays/the-scoreboard-self.html</loc><lastmod>2026-08-17</lastmod><changefreq>monthly</changefreq><priority>0.72</priority></url><url><loc>https://lifeinthesimulation.com/essays/why-boredom-feels-dangerous.html</loc><lastmod>2026-08-17</lastmod><changefreq>monthly</changefreq><priority>0.72</priority></url><url><loc>https://lifeinthesimulation.com/essays/friction-is-a-feature.html</loc><lastmod>2026-08-17</lastmod><changefreq>monthly</changefreq><priority>0.72</priority></url><url><loc>https://lifeinthesimulation.com/guides/thirty-day-attention-experiment.html</loc><lastmod>2026-08-17</lastmod><changefreq>monthly</changefreq><priority>0.72</priority></url><url><loc>https://lifeinthesimulation.com/guides/personal-information-diet.html</loc><lastmod>2026-08-17</lastmod><changefreq>monthly</changefreq><priority>0.72</priority></url><url><loc>https://lifeinthesimulation.com/guides/analog-saturday-protocol.html</loc><lastmod>2026-08-17</lastmod><changefreq>monthly</changefreq><priority>0.72</priority></url><url><loc>https://lifeinthesimulation.com/guides/personal-data-minimization.html</loc><lastmod>2026-08-17</lastmod><changefreq>monthly</changefreq><priority>0.72</priority></url><url><loc>https://lifeinthesimulation.com/guides/deep-work-field-manual.html</loc><lastmod>2026-08-17</lastmod><changefreq>monthly</changefreq><priority>0.72</priority></url></urlset>
