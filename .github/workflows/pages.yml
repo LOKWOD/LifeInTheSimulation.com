@@ -1,4 +1,4 @@
-name: Deploy Life in the Simulation
+name: Publish generated Life in the Simulation site
 
 on:
   push:
@@ -6,43 +6,43 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
 concurrency:
-  group: polished-pages
+  group: life-simulation-site-content
   cancel-in-progress: true
 
 jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  publish:
+    if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout latest site package
+      - name: Checkout latest source
         uses: actions/checkout@v4
         with:
           ref: main
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
       - uses: actions/setup-node@v4
         with:
           node-version: 20
       - name: Assemble polished site
         run: |
+          rm -rf _site
           mkdir -p _site
           cat .site-bundle/part-* | base64 --decode | tar -xz -C _site
           test -f _site/index.html
-          echo "Prepared $(find _site -type f | wc -l) site files"
-      - name: Generate expanded essay and field-guide library
+          echo "Prepared $(find _site -type f | wc -l) base site files"
+      - name: Generate both expansion libraries
         run: |
           node scripts/generate-expansion.mjs _site
           node scripts/generate-expansion-two.mjs _site
-      - name: Inject Cloudflare Web Analytics
+      - name: Normalize and verify Cloudflare Web Analytics
         shell: python
         run: |
           from pathlib import Path
           import re
+
           token = "352a9195ed5342f9a8a9d244e13bddab"
           beacon = f'''<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{{"token": "{token}"}}'></script><!-- End Cloudflare Web Analytics -->'''
           pattern = re.compile(r"(?:<!--\s*Cloudflare Web Analytics\s*-->)?\s*<script\b[^>]*\bsrc=[\"']https://static\.cloudflareinsights\.com/beacon\.min\.js[\"'][^>]*></script>\s*(?:<!--\s*End Cloudflare Web Analytics\s*-->)?", re.I)
@@ -56,16 +56,22 @@ jobs:
               html = pattern.sub("", html)
               html = re.sub(r"</body>", beacon + "\n</body>", html, count=1, flags=re.I)
               if html.count("static.cloudflareinsights.com/beacon.min.js") != 1 or token not in html:
-                  raise SystemExit(f"Analytics injection verification failed for {path}")
+                  raise SystemExit(f"Analytics verification failed for {path}")
               path.write_text(html, encoding="utf-8")
-          print(f"Cloudflare Web Analytics installed on {len(html_files)} HTML pages")
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: _site
-      - name: Let GitHub's branch publisher finish first
-        if: github.event_name == 'push'
-        run: sleep 75
-      - name: Deploy generated site to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+          print(f"Cloudflare Web Analytics verified on {len(html_files)} HTML pages")
+      - name: Install generated publication into main
+        run: |
+          cp -a _site/. .
+          rm -rf _site
+      - name: Commit generated publication
+        run: |
+          if git diff --quiet && git diff --cached --quiet; then
+            echo "Generated publication is already current."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Publish second Life in the Simulation expansion"
+          git pull --rebase origin main
+          git push origin HEAD:main
