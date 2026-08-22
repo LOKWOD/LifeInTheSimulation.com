@@ -37,6 +37,7 @@ jobs:
         run: |
           node scripts/generate-expansion.mjs _site
           node scripts/generate-expansion-two.mjs _site
+          node scripts/publish-daily-2026-08-22.mjs _site
       - name: Normalize and verify Cloudflare Web Analytics
         shell: python
         run: |
@@ -53,14 +54,18 @@ jobs:
               html = path.read_text(encoding="utf-8")
               if "</body>" not in html.lower():
                   raise SystemExit(f"Missing </body> in {path}")
-              html = pattern.sub("", html)
-              html = re.sub(r"</body>", beacon + "\n</body>", html, count=1, flags=re.I)
+              analytics_count = html.count("static.cloudflareinsights.com/beacon.min.js")
+              if analytics_count != 1 or token not in html:
+                  html = pattern.sub("", html)
+                  html = re.sub(r"</body>", beacon + "\n</body>", html, count=1, flags=re.I)
+                  path.write_text(html, encoding="utf-8")
               if html.count("static.cloudflareinsights.com/beacon.min.js") != 1 or token not in html:
                   raise SystemExit(f"Analytics verification failed for {path}")
-              path.write_text(html, encoding="utf-8")
           print(f"Cloudflare Web Analytics verified on {len(html_files)} HTML pages")
       - name: Inject website visitor light beacon
         run: node scripts/inject-visitor-beacon.mjs _site life-in-the-simulation
+      - name: Audit generated publication
+        run: node scripts/audit-daily-publication.mjs _site
       - name: Install generated publication into main
         run: |
           cp -a _site/. .
