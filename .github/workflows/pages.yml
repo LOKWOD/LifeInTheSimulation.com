@@ -38,6 +38,7 @@ jobs:
           node scripts/generate-expansion.mjs _site
           node scripts/generate-expansion-two.mjs _site
           node scripts/publish-daily-2026-08-22.mjs _site
+          node scripts/publish-daily-2026-08-23.mjs _site
       - name: Normalize and verify Cloudflare Web Analytics
         shell: python
         run: |

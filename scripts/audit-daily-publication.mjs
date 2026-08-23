@@ -53,8 +53,8 @@ for (const file of htmlFiles) {
 }
 
 const today = [
-  "essays/ai-accuracy-is-not-understanding.html",
-  "guides/best-books-to-understand-ai.html"
+  "essays/dreams-are-not-evidence-of-simulation.html",
+  "guides/e-ink-writing-tablets-for-focus.html"
 ];
 for (const rel of today) {
   const html = readFileSync(join(root, rel), "utf8");
@@ -69,6 +69,11 @@ for (const rel of today) {
     [/lokwod-visitor-beacon/, "visitor beacon"]
   ]) if (!requirement[0].test(html)) fail(`${rel}: missing ${requirement[1]}`);
   if (count(html, /href="\//g) < 8) fail(`${rel}: fewer than three meaningful internal links`);
+  if (count(html, /<figure\b/g) !== 1) fail(`${rel}: expected exactly one accessible editorial visual`);
+  if (!/<figure\b[^>]*aria-label="[^"]+"/i.test(html) || !/<figcaption>/i.test(html)) fail(`${rel}: visual missing aria-label or caption`);
+  if (count(html, /<img\b/g) !== 1 || !/<img\b[^>]*\balt="[^"]+"/i.test(html)) fail(`${rel}: expected one editorial image with useful alt text`);
+  const imageSrc = html.match(/<img\b[^>]*\bsrc="([^"]+)"/i)?.[1];
+  if (!imageSrc || !existsSync(targetFor(join(root, rel), imageSrc))) fail(`${rel}: missing editorial image asset ${imageSrc || "(none)"}`);
   for (const json of html.matchAll(/<script\s+type="application\/ld\+json">([\s\S]*?)<\/script>/g)) {
     try { JSON.parse(json[1]); } catch (error) { fail(`${rel}: invalid JSON-LD (${error.message})`); }
   }
@@ -82,7 +87,7 @@ for (const rel of today) {
   if (count(feed, new RegExp(url.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "g")) !== 2) fail(`feed: ${url} must appear exactly twice (link and guid)`);
   if (count(sitemap, new RegExp(url.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "g")) !== 1) fail(`sitemap: ${url} must appear exactly once`);
 }
-if (!/<lastBuildDate>Sat, 22 Aug 2026/.test(feed)) fail("feed: stale lastBuildDate");
+if (!/<lastBuildDate>Sun, 23 Aug 2026/.test(feed)) fail("feed: stale lastBuildDate");
 if (count(sitemap, /<loc>/g) !== new Set([...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1])).size) fail("sitemap: duplicate URLs");
 
 if (failures.length) {
