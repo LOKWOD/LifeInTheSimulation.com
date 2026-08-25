@@ -27,6 +27,17 @@ Simulation theory is treated as a hypothesis, not an established fact. Scientifi
 The essays and field guides may be summarized with attribution and a link to the original page.
 
 
+
+
+
+
 ## Daily publication 2026-08-24
 - The Feeling of Understanding Is Not Understanding: https://lifeinthesimulation.com/essays/the-feeling-of-understanding-is-not-understanding.html
 - Password Managers Without the Hype: Bitwarden vs 1Password vs Proton Pass vs KeePassXC: https://lifeinthesimulation.com/guides/password-managers-without-the-hype.html
+
+
+
+
+## Daily publication 2026-08-25
+- Your Memory Is Not a Recording—and That Does Not Make It Useless: https://lifeinthesimulation.com/essays/memory-is-not-a-recording.html
+- Hardware Security Keys Without the Hype: Yubico vs Google Titan—and the No-Buy Option: https://lifeinthesimulation.com/guides/hardware-security-keys-without-the-hype.html

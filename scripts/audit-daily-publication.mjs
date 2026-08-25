@@ -53,8 +53,8 @@ for (const file of htmlFiles) {
 }
 
 const today = [
-  "essays/the-feeling-of-understanding-is-not-understanding.html",
-  "guides/password-managers-without-the-hype.html"
+  "essays/memory-is-not-a-recording.html",
+  "guides/hardware-security-keys-without-the-hype.html"
 ];
 for (const rel of today) {
   const html = readFileSync(join(root, rel), "utf8");
@@ -88,14 +88,14 @@ for (const rel of today) {
   if (count(feed, new RegExp(url.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "g")) !== 2) fail(`feed: ${url} must appear exactly twice (link and guid)`);
   if (count(sitemap, new RegExp(url.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "g")) !== 1) fail(`sitemap: ${url} must appear exactly once`);
 }
-for (const asset of ["/assets/visuals/understanding-calibration-loop.svg", "/assets/visuals/password-manager-choice-map.svg"]) {
+for (const asset of ["/assets/visuals/memory-reconstruction-path.svg", "/assets/visuals/security-key-rollout-map.svg"]) {
   if (!visualCredits.includes(asset)) fail(`image credits: missing ${asset}`);
 }
 const guideHtml = readFileSync(join(root, today[1]), "utf8");
-for (const host of ["bitwarden.com", "1password.com", "proton.me", "keepassxc.org"]) {
+for (const host of ["pages.nist.gov", "fidoalliance.org", "yubico.com", "store.google.com", "landing.google.com"]) {
   if (!guideHtml.includes(host)) fail(`${today[1]}: missing official ${host} source`);
 }
-if (!/<lastBuildDate>Mon, 24 Aug 2026/.test(feed)) fail("feed: stale lastBuildDate");
+if (!/<lastBuildDate>Tue, 25 Aug 2026/.test(feed)) fail("feed: stale lastBuildDate");
 if (count(sitemap, /<loc>/g) !== new Set([...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1])).size) fail("sitemap: duplicate URLs");
 
 if (failures.length) {
