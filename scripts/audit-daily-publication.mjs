@@ -53,8 +53,8 @@ for (const file of htmlFiles) {
 }
 
 const today = [
-  "essays/memory-is-not-a-recording.html",
-  "guides/hardware-security-keys-without-the-hype.html"
+  "essays/neuroscience-has-not-disproved-free-will.html",
+  "guides/private-note-taking-apps.html"
 ];
 for (const rel of today) {
   const html = readFileSync(join(root, rel), "utf8");
@@ -70,6 +70,7 @@ for (const rel of today) {
   ]) if (!requirement[0].test(html)) fail(`${rel}: missing ${requirement[1]}`);
   if (count(html, /href="\//g) < 8) fail(`${rel}: fewer than three meaningful internal links`);
   if (count(html, /<figure\b/g) !== 1) fail(`${rel}: expected exactly one accessible editorial visual`);
+  if (html.replace(/<[^>]+>/g, " ").trim().split(/\s+/).length < 1100) fail(`${rel}: page is not substantial enough`);
   if (!/<figcaption>/i.test(html)) fail(`${rel}: visual missing caption`);
   if (count(html, /<img\b/g) !== 1 || !/<img\b[^>]*\balt="[^"]+"/i.test(html)) fail(`${rel}: expected one editorial image with useful alt text`);
   const imageSrc = html.match(/<img\b[^>]*\bsrc="([^"]+)"/i)?.[1];
@@ -88,14 +89,18 @@ for (const rel of today) {
   if (count(feed, new RegExp(url.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "g")) !== 2) fail(`feed: ${url} must appear exactly twice (link and guid)`);
   if (count(sitemap, new RegExp(url.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "g")) !== 1) fail(`sitemap: ${url} must appear exactly once`);
 }
-for (const asset of ["/assets/visuals/memory-reconstruction-path.svg", "/assets/visuals/security-key-rollout-map.svg"]) {
+for (const asset of ["/assets/visuals/free-will-claim-map.svg", "/assets/visuals/private-notes-custody-map.svg"]) {
   if (!visualCredits.includes(asset)) fail(`image credits: missing ${asset}`);
 }
 const guideHtml = readFileSync(join(root, today[1]), "utf8");
-for (const host of ["pages.nist.gov", "fidoalliance.org", "yubico.com", "store.google.com", "landing.google.com"]) {
+for (const host of ["standardnotes.com", "joplinapp.org", "obsidian.md"]) {
   if (!guideHtml.includes(host)) fail(`${today[1]}: missing official ${host} source`);
 }
-if (!/<lastBuildDate>Tue, 25 Aug 2026/.test(feed)) fail("feed: stale lastBuildDate");
+const essayHtml = readFileSync(join(root, today[0]), "utf8");
+for (const host of ["pubmed.ncbi.nlm.nih.gov", "elifesciences.org"]) {
+  if (!essayHtml.includes(host)) fail(`${today[0]}: missing primary ${host} source`);
+}
+if (!/<lastBuildDate>Wed, 26 Aug 2026/.test(feed)) fail("feed: stale lastBuildDate");
 if (count(sitemap, /<loc>/g) !== new Set([...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1])).size) fail("sitemap: duplicate URLs");
 
 if (failures.length) {

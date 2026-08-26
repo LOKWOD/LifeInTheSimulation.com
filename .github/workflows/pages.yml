@@ -41,6 +41,7 @@ jobs:
           node scripts/publish-daily-2026-08-23.mjs _site
           node scripts/publish-daily-2026-08-24.mjs _site
           node scripts/publish-daily-2026-08-25.mjs _site
+          node scripts/publish-daily-2026-08-26.mjs _site
       - name: Normalize and verify Cloudflare Web Analytics
         shell: python
         run: |

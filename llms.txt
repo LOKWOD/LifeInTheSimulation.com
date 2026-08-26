@@ -35,3 +35,11 @@ The essays and field guides may be summarized with attribution and a link to the
 ## Daily publication 2026-08-25
 - Your Memory Is Not a Recording—and That Does Not Make It Useless: https://lifeinthesimulation.com/essays/memory-is-not-a-recording.html
 - Hardware Security Keys Without the Hype: Yubico vs Google Titan—and the No-Buy Option: https://lifeinthesimulation.com/guides/hardware-security-keys-without-the-hype.html
+
+
+
+
+
+## Daily publication 2026-08-26
+- Neuroscience Has Not Disproved Free Will: https://lifeinthesimulation.com/essays/neuroscience-has-not-disproved-free-will.html
+- Private Note-Taking Apps: Standard Notes vs Joplin vs Obsidian—and Paper: https://lifeinthesimulation.com/guides/private-note-taking-apps.html
