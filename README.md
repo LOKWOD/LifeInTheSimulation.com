@@ -4,8 +4,8 @@ Static editorial website for **Life in the Simulation**.
 
 ## What is included
 
-- 25 long-form essays across reality, mind, AI, attention and systems
-- 20 practical field guides
+- 12 long-form essays across reality, mind, AI, attention and systems
+- 7 practical field guides
 - 18 short Signals
 - 26-term glossary
 - interactive, local-only thought experiments
@@ -13,8 +13,7 @@ Static editorial website for **Life in the Simulation**.
 - article table of contents and reading progress
 - search and category filtering
 - RSS, sitemap, structured data, social card, manifest and custom 404
-- no framework or third-party UI runtime dependencies
-- Cloudflare Web Analytics and the LOKWOD visitor beacon
+- no framework, no analytics and no third-party runtime dependencies
 
 ## Publishing
 
