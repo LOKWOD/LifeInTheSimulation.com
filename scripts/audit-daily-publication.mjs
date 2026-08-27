@@ -53,8 +53,8 @@ for (const file of htmlFiles) {
 }
 
 const today = [
-  "essays/neuroscience-has-not-disproved-free-will.html",
-  "guides/private-note-taking-apps.html"
+  "essays/predictive-processing-does-not-mean-reality-is-a-hallucination.html",
+  "guides/website-blockers-for-focus.html"
 ];
 for (const rel of today) {
   const html = readFileSync(join(root, rel), "utf8");
@@ -89,18 +89,18 @@ for (const rel of today) {
   if (count(feed, new RegExp(url.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "g")) !== 2) fail(`feed: ${url} must appear exactly twice (link and guid)`);
   if (count(sitemap, new RegExp(url.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "g")) !== 1) fail(`sitemap: ${url} must appear exactly once`);
 }
-for (const asset of ["/assets/visuals/free-will-claim-map.svg", "/assets/visuals/private-notes-custody-map.svg"]) {
+for (const asset of ["/assets/visuals/predictive-perception-constraint-loop.svg", "/assets/visuals/website-blocker-choice-map.svg"]) {
   if (!visualCredits.includes(asset)) fail(`image credits: missing ${asset}`);
 }
 const guideHtml = readFileSync(join(root, today[1]), "utf8");
-for (const host of ["standardnotes.com", "joplinapp.org", "obsidian.md"]) {
+for (const host of ["freedom.to", "getcoldturkey.com", "support.apple.com"]) {
   if (!guideHtml.includes(host)) fail(`${today[1]}: missing official ${host} source`);
 }
 const essayHtml = readFileSync(join(root, today[0]), "utf8");
-for (const host of ["pubmed.ncbi.nlm.nih.gov", "elifesciences.org"]) {
+for (const host of ["cambridge.org", "nature.com", "pubmed.ncbi.nlm.nih.gov"]) {
   if (!essayHtml.includes(host)) fail(`${today[0]}: missing primary ${host} source`);
 }
-if (!/<lastBuildDate>Wed, 26 Aug 2026/.test(feed)) fail("feed: stale lastBuildDate");
+if (!/<lastBuildDate>Thu, 27 Aug 2026/.test(feed)) fail("feed: stale lastBuildDate");
 if (count(sitemap, /<loc>/g) !== new Set([...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1])).size) fail("sitemap: duplicate URLs");
 
 if (failures.length) {

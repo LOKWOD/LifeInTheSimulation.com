@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-26",
+  "generated": "2026-08-27",
   "assets": [
     {
       "path": "/assets/visuals/dream-evidence-filter.svg",
@@ -45,6 +45,18 @@
     },
     {
       "path": "/assets/visuals/private-notes-custody-map.svg",
+      "creator": "Life in the Simulation Editorial Desk",
+      "source": "Original editorial illustration",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/predictive-perception-constraint-loop.svg",
+      "creator": "Life in the Simulation Editorial Desk",
+      "source": "Original editorial illustration",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/website-blocker-choice-map.svg",
       "creator": "Life in the Simulation Editorial Desk",
       "source": "Original editorial illustration",
       "license": "Copyright Life in the Simulation"
