@@ -53,8 +53,9 @@ for (const file of htmlFiles) {
 }
 
 const today = [
-  "essays/predictive-processing-does-not-mean-reality-is-a-hallucination.html",
-  "guides/website-blockers-for-focus.html"
+  "essays/emergence-is-not-an-explanation.html",
+  "guides/rss-readers-for-a-calmer-internet.html",
+  "guides/ai-memory-controls-chatgpt-claude-gemini.html"
 ];
 for (const rel of today) {
   const html = readFileSync(join(root, rel), "utf8");
@@ -89,18 +90,22 @@ for (const rel of today) {
   if (count(feed, new RegExp(url.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "g")) !== 2) fail(`feed: ${url} must appear exactly twice (link and guid)`);
   if (count(sitemap, new RegExp(url.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "g")) !== 1) fail(`sitemap: ${url} must appear exactly once`);
 }
-for (const asset of ["/assets/visuals/predictive-perception-constraint-loop.svg", "/assets/visuals/website-blocker-choice-map.svg"]) {
+for (const asset of ["/assets/visuals/emergence-explanation-ladder.svg", "/assets/visuals/rss-reader-choice-map.svg", "/assets/visuals/ai-memory-control-layers.svg"]) {
   if (!visualCredits.includes(asset)) fail(`image credits: missing ${asset}`);
 }
-const guideHtml = readFileSync(join(root, today[1]), "utf8");
-for (const host of ["freedom.to", "getcoldturkey.com", "support.apple.com"]) {
-  if (!guideHtml.includes(host)) fail(`${today[1]}: missing official ${host} source`);
+const rssHtml = readFileSync(join(root, today[1]), "utf8");
+for (const host of ["feedly.com", "inoreader.com", "netnewswire.com", "rssboard.org", "rfc-editor.org"]) {
+  if (!rssHtml.includes(host)) fail(`${today[1]}: missing official ${host} source`);
 }
 const essayHtml = readFileSync(join(root, today[0]), "utf8");
-for (const host of ["cambridge.org", "nature.com", "pubmed.ncbi.nlm.nih.gov"]) {
+for (const host of ["science.org", "plato.stanford.edu", "arxiv.org"]) {
   if (!essayHtml.includes(host)) fail(`${today[0]}: missing primary ${host} source`);
 }
-if (!/<lastBuildDate>Thu, 27 Aug 2026/.test(feed)) fail("feed: stale lastBuildDate");
+const memoryHtml = readFileSync(join(root, today[2]), "utf8");
+for (const host of ["help.openai.com", "support.anthropic.com", "support.google.com"]) {
+  if (!memoryHtml.includes(host)) fail(`${today[2]}: missing official ${host} source`);
+}
+if (!/<lastBuildDate>Sun, 30 Aug 2026/.test(feed)) fail("feed: stale lastBuildDate");
 if (count(sitemap, /<loc>/g) !== new Set([...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1])).size) fail("sitemap: duplicate URLs");
 
 if (failures.length) {

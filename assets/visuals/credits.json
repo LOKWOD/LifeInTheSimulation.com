@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-27",
+  "generated": "2026-08-30",
   "assets": [
     {
       "path": "/assets/visuals/dream-evidence-filter.svg",
@@ -57,6 +57,24 @@
     },
     {
       "path": "/assets/visuals/website-blocker-choice-map.svg",
+      "creator": "Life in the Simulation Editorial Desk",
+      "source": "Original editorial illustration",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/emergence-explanation-ladder.svg",
+      "creator": "Life in the Simulation Editorial Desk",
+      "source": "Original editorial illustration",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/rss-reader-choice-map.svg",
+      "creator": "Life in the Simulation Editorial Desk",
+      "source": "Original editorial illustration",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/ai-memory-control-layers.svg",
       "creator": "Life in the Simulation Editorial Desk",
       "source": "Original editorial illustration",
       "license": "Copyright Life in the Simulation"

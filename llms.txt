@@ -45,3 +45,10 @@ The essays and field guides may be summarized with attribution and a link to the
 ## Daily publication 2026-08-27
 - Predictive Processing Does Not Mean Reality Is a Hallucination: https://lifeinthesimulation.com/essays/predictive-processing-does-not-mean-reality-is-a-hallucination.html
 - Website Blockers for Focus: Freedom vs Cold Turkey vs Screen Time—and the No-Buy Option: https://lifeinthesimulation.com/guides/website-blockers-for-focus.html
+
+
+
+## Daily publication 2026-08-30
+- Emergence Is Not an Explanation by Itself: https://lifeinthesimulation.com/essays/emergence-is-not-an-explanation.html
+- RSS Readers for a Calmer Internet: Feedly vs Inoreader vs NetNewsWire: https://lifeinthesimulation.com/guides/rss-readers-for-a-calmer-internet.html
+- What AI Chatbots Remember: ChatGPT vs Claude vs Gemini Memory Controls: https://lifeinthesimulation.com/guides/ai-memory-controls-chatgpt-claude-gemini.html
