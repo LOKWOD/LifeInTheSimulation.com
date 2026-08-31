@@ -4,6 +4,16 @@ import { dirname, join, relative, resolve } from "node:path";
 const root = resolve(process.argv[2] || ".");
 const failures = [];
 const htmlFiles = [];
+const today = [
+  "essays/confidence-is-not-calibration.html",
+  "guides/private-web-browsers-firefox-brave-safari.html",
+  "guides/local-ai-ollama-vs-lm-studio.html"
+];
+const assets = [
+  "/assets/visuals/confidence-calibration-editorial.webp",
+  "/assets/visuals/privacy-browser-paths-editorial.webp",
+  "/assets/visuals/local-ai-closed-loop-editorial.webp"
+];
 
 function walk(dir) {
   for (const entry of readdirSync(dir, { withFileTypes: true })) {
@@ -13,9 +23,9 @@ function walk(dir) {
     else if (entry.name.endsWith(".html")) htmlFiles.push(full);
   }
 }
-
 function fail(message) { failures.push(message); }
 function count(text, re) { return [...text.matchAll(re)].length; }
+function escapeRe(text) { return text.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); }
 function targetFor(file, href) {
   const clean = href.split("#")[0].split("?")[0];
   if (!clean) return null;
@@ -26,7 +36,6 @@ function targetFor(file, href) {
 walk(root);
 const titles = new Map();
 const canonicals = new Map();
-
 for (const file of htmlFiles) {
   const rel = relative(root, file);
   const html = readFileSync(file, "utf8");
@@ -52,25 +61,21 @@ for (const file of htmlFiles) {
   }
 }
 
-const today = [
-  "essays/confidence-is-not-calibration.html",
-  "guides/private-web-browsers-firefox-brave-safari.html",
-  "guides/local-ai-ollama-vs-lm-studio.html"
-];
 for (const rel of today) {
   const html = readFileSync(join(root, rel), "utf8");
-  for (const requirement of [
+  for (const [pattern, label] of [
     [/<meta\s+name="description"/, "description"],
     [/<link\s+rel="canonical"/, "canonical"],
     [/<meta\s+property="og:title"/, "Open Graph title"],
+    [/<meta\s+property="og:image"/, "Open Graph image"],
     [/<meta\s+name="twitter:card"/, "Twitter card"],
     [/<script\s+type="application\/ld\+json">/, "JSON-LD"],
     [/data-toc/, "table of contents"],
     [/static\.cloudflareinsights\.com\/beacon\.min\.js/, "Cloudflare analytics"],
     [/lokwod-visitor-beacon/, "visitor beacon"]
-  ]) if (!requirement[0].test(html)) fail(`${rel}: missing ${requirement[1]}`);
+  ]) if (!pattern.test(html)) fail(`${rel}: missing ${label}`);
   if (count(html, /href="\//g) < 8) fail(`${rel}: fewer than three meaningful internal links`);
-  if (count(html, /<figure\b/g) !== 1) fail(`${rel}: expected exactly one accessible editorial visual`);
+  if (count(html, /<figure\b/g) !== 1) fail(`${rel}: expected exactly one editorial visual`);
   if (html.replace(/<[^>]+>/g, " ").trim().split(/\s+/).length < 1100) fail(`${rel}: page is not substantial enough`);
   if (!/<figcaption>/i.test(html)) fail(`${rel}: visual missing caption`);
   if (count(html, /<img\b/g) !== 1 || !/<img\b[^>]*\balt="[^"]+"/i.test(html)) fail(`${rel}: expected one editorial image with useful alt text`);
@@ -84,32 +89,27 @@ for (const rel of today) {
 
 const feed = readFileSync(join(root, "feed.xml"), "utf8");
 const sitemap = readFileSync(join(root, "sitemap.xml"), "utf8");
-const visualCredits = readFileSync(join(root, "assets", "visuals", "credits.json"), "utf8");
+const credits = readFileSync(join(root, "assets", "visuals", "credits.json"), "utf8");
 for (const rel of today) {
   const url = `https://lifeinthesimulation.com/${rel}`;
-  if (count(feed, new RegExp(url.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "g")) !== 2) fail(`feed: ${url} must appear exactly twice (link and guid)`);
-  if (count(sitemap, new RegExp(url.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "g")) !== 1) fail(`sitemap: ${url} must appear exactly once`);
+  if (count(feed, new RegExp(escapeRe(url), "g")) !== 2) fail(`feed: ${url} must appear exactly twice`);
+  if (count(sitemap, new RegExp(escapeRe(url), "g")) !== 1) fail(`sitemap: ${url} must appear exactly once`);
 }
-for (const asset of ["/assets/visuals/confidence-calibration-editorial.webp", "/assets/visuals/privacy-browser-paths-editorial.webp", "/assets/visuals/local-ai-closed-loop-editorial.webp"]) {
-  if (!visualCredits.includes(asset)) fail(`image credits: missing ${asset}`);
-}
-const browserHtml = readFileSync(join(root, today[1]), "utf8");
-for (const host of ["support.mozilla.org", "brave.com", "webkit.org"]) {
-  if (!browserHtml.includes(host)) fail(`${today[1]}: missing official ${host} source`);
-}
-const essayHtml = readFileSync(join(root, today[0]), "utf8");
-for (const host of ["proceedings.mlr.press", "papers.nips.cc", "airc.nist.gov"]) {
-  if (!essayHtml.includes(host)) fail(`${today[0]}: missing primary ${host} source`);
-}
-const localAiHtml = readFileSync(join(root, today[2]), "utf8");
-for (const host of ["docs.ollama.com", "lmstudio.ai"]) {
-  if (!localAiHtml.includes(host)) fail(`${today[2]}: missing official ${host} source`);
-}
+for (const asset of assets) if (!credits.includes(asset)) fail(`image credits: missing ${asset}`);
+
+const calibration = readFileSync(join(root, today[0]), "utf8");
+for (const host of ["proceedings.mlr.press", "papers.nips.cc", "airc.nist.gov"]) if (!calibration.includes(host)) fail(`${today[0]}: missing authoritative ${host} source`);
+const browsers = readFileSync(join(root, today[1]), "utf8");
+for (const host of ["support.mozilla.org", "brave.com", "webkit.org"]) if (!browsers.includes(host)) fail(`${today[1]}: missing official ${host} source`);
+const localAi = readFileSync(join(root, today[2]), "utf8");
+for (const host of ["docs.ollama.com", "lmstudio.ai"]) if (!localAi.includes(host)) fail(`${today[2]}: missing official ${host} source`);
+
 if (!/<lastBuildDate>Mon, 31 Aug 2026/.test(feed)) fail("feed: stale lastBuildDate");
-if (count(sitemap, /<loc>/g) !== new Set([...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1])).size) fail("sitemap: duplicate URLs");
+const sitemapUrls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
+if (sitemapUrls.length !== new Set(sitemapUrls).size) fail("sitemap: duplicate URLs");
 
 if (failures.length) {
   console.error(failures.map((item) => `FAIL ${item}`).join("\n"));
   process.exit(1);
 }
-console.log(`PASS ${htmlFiles.length} HTML pages checked; ${titles.size} unique titles; ${canonicals.size} unique canonicals; internal links, today's metadata/schema/integrations, RSS and sitemap verified.`);
+console.log(`PASS ${htmlFiles.length} HTML pages checked; ${titles.size} unique titles; ${canonicals.size} unique canonicals; internal links, today's metadata/schema/integrations, official sources, visual credits, RSS and sitemap verified.`);

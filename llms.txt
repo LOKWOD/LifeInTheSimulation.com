@@ -51,3 +51,10 @@ The essays and field guides may be summarized with attribution and a link to the
 - Emergence Is Not an Explanation by Itself: https://lifeinthesimulation.com/essays/emergence-is-not-an-explanation.html
 - RSS Readers for a Calmer Internet: Feedly vs Inoreader vs NetNewsWire: https://lifeinthesimulation.com/guides/rss-readers-for-a-calmer-internet.html
 - What AI Chatbots Remember: ChatGPT vs Claude vs Gemini Memory Controls: https://lifeinthesimulation.com/guides/ai-memory-controls-chatgpt-claude-gemini.html
+
+
+
+## Daily publication 2026-08-31
+- Confidence Is Not the Same as Calibration: https://lifeinthesimulation.com/essays/confidence-is-not-calibration.html
+- Private Web Browsers Without the Hype: Firefox vs Brave vs Safari: https://lifeinthesimulation.com/guides/private-web-browsers-firefox-brave-safari.html
+- Local AI Without the Hype: Ollama vs LM Studio—and When Cloud Is Better: https://lifeinthesimulation.com/guides/local-ai-ollama-vs-lm-studio.html
