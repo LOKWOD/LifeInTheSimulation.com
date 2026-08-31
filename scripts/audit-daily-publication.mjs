@@ -85,6 +85,10 @@ for (const rel of today) {
 const feed = readFileSync(join(root, "feed.xml"), "utf8");
 const sitemap = readFileSync(join(root, "sitemap.xml"), "utf8");
 const visualCredits = readFileSync(join(root, "assets", "visuals", "credits.json"), "utf8");
+const essaysArchive = readFileSync(join(root, "essays.html"), "utf8");
+const guidesArchive = readFileSync(join(root, "field-guides.html"), "utf8");
+if (!/>28<\/span> transmissions available/.test(essaysArchive)) fail("essays archive: stale result count");
+if (!/>25<\/span> protocols available/.test(guidesArchive)) fail("field guides archive: stale result count");
 for (const rel of today) {
   const url = `https://lifeinthesimulation.com/${rel}`;
   if (count(feed, new RegExp(url.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "g")) !== 2) fail(`feed: ${url} must appear exactly twice (link and guid)`);

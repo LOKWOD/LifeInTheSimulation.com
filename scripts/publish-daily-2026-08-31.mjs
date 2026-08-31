@@ -183,8 +183,8 @@ upsert("index.html", "DAILY 2026-08-31 HOME", `<section class="latest-section se
 
 for (const [file, replacements] of Object.entries({
   "index.html": [[">27</dt><dd>Essays", ">28</dt><dd>Essays"], [">23</dt><dd>Field guides", ">25</dt><dd>Field guides"], ["View all 27 essays", "View all 28 essays"]],
-  "essays.html": [[">27 / Transmissions", ">28 / Transmissions"], [">27</span> transmissions available", ">28</span> transmissions available"]],
-  "field-guides.html": [[">23 / Field guides", ">25 / Field guides"], [">23</span> protocols available", ">25</span> protocols available"]],
+  "essays.html": [[">27 / Transmissions", ">28 / Transmissions"], [">27</span> transmissions available", ">28</span> transmissions available"], [">12</span> transmissions available", ">28</span> transmissions available"]],
+  "field-guides.html": [[">23 / Field guides", ">25 / Field guides"], [">23</span> protocols available", ">25</span> protocols available"], [">7</span> protocols available", ">25</span> protocols available"]],
 })) { const full = join(root, file); let source = readFileSync(full, "utf8"); for (const [from, to] of replacements) source = source.replace(from, to); writeFileSync(full, source); }
 
 upsert("essays/the-feeling-of-understanding-is-not-understanding.html", "DAILY 2026-08-31 CALIBRATION", `<div class="article-callout"><strong>New related transmission</strong><span>Separate persuasive certainty from a measurable track record in <a href="/essays/confidence-is-not-calibration.html">Confidence Is Not the Same as Calibration</a>.</span></div>`, "<section class=\"article-endnote\">");
