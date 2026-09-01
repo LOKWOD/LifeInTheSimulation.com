@@ -57,3 +57,9 @@ The essays and field guides may be summarized with attribution and a link to the
 - Confidence Is Not the Same as Calibration: https://lifeinthesimulation.com/essays/confidence-is-not-calibration.html
 - Private Web Browsers Without the Hype: Firefox vs Brave vs Safari: https://lifeinthesimulation.com/guides/private-web-browsers-firefox-brave-safari.html
 - Local AI Without the Hype: Ollama vs LM Studio—and When Cloud Is Better: https://lifeinthesimulation.com/guides/local-ai-ollama-vs-lm-studio.html
+
+
+## Daily publication 2026-09-01
+- Automation Does Not Remove Responsibility: https://lifeinthesimulation.com/essays/automation-does-not-remove-responsibility.html
+- Encrypted Cloud Storage Without the Hype: Proton Drive vs Tresorit vs Cryptomator: https://lifeinthesimulation.com/guides/encrypted-cloud-storage-proton-tresorit-cryptomator.html
+- Noise-Canceling Headphones for Focus: ANC vs Isolation vs Earplugs: https://lifeinthesimulation.com/guides/noise-canceling-headphones-for-focus.html
