@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-01",
+  "generated": "2026-09-02",
   "assets": [
     {
       "path": "/assets/visuals/dream-evidence-filter.svg",
@@ -111,6 +111,24 @@
     },
     {
       "path": "/assets/visuals/focus-headphones-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original editorial photographic image generated for this page",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/digital-twin-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original editorial photographic image generated for this page",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/private-dns-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original editorial photographic image generated for this page",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/minimalist-phone-editorial.webp",
       "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
       "source": "Original editorial photographic image generated for this page",
       "license": "Copyright Life in the Simulation"

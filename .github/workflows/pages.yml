@@ -46,6 +46,7 @@ jobs:
           node scripts/publish-daily-2026-08-30.mjs _site
           node scripts/publish-daily-2026-08-31.mjs _site
           node scripts/publish-daily-2026-09-01.mjs _site
+          node scripts/publish-daily-2026-09-02.mjs _site
       - name: Normalize and verify Cloudflare Web Analytics
         shell: python
         run: |
@@ -75,7 +76,6 @@ jobs:
       - name: Audit generated publication
         run: |
           node scripts/audit-daily-publication.mjs _site
-          node scripts/audit-daily-2026-09-01.mjs _site
       - name: Install generated publication into main
         run: |
           cp -a _site/. .

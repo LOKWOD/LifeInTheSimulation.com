@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://lifeinthesimulation.com/</loc><lastmod>2026-09-01</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://lifeinthesimulation.com/</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
   <url><loc>https://lifeinthesimulation.com/start-here.html</loc><lastmod>2026-08-14</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://lifeinthesimulation.com/essays.html</loc><lastmod>2026-09-01</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://lifeinthesimulation.com/field-guides.html</loc><lastmod>2026-09-01</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://lifeinthesimulation.com/essays.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://lifeinthesimulation.com/field-guides.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://lifeinthesimulation.com/signals.html</loc><lastmod>2026-08-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://lifeinthesimulation.com/glossary.html</loc><lastmod>2026-08-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://lifeinthesimulation.com/experiments.html</loc><lastmod>2026-08-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -74,4 +74,9 @@
 <url><loc>https://lifeinthesimulation.com/guides/encrypted-cloud-storage-proton-tresorit-cryptomator.html</loc><lastmod>2026-09-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://lifeinthesimulation.com/guides/noise-canceling-headphones-for-focus.html</loc><lastmod>2026-09-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <!-- DAILY 2026-09-01 SITEMAP END -->
+<!-- DAILY 2026-09-02 SITEMAP START -->
+<url><loc>https://lifeinthesimulation.com/essays/digital-twin-is-not-a-second-reality.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://lifeinthesimulation.com/guides/private-dns-quad9-cloudflare-nextdns.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://lifeinthesimulation.com/guides/minimalist-phones-light-phone-punkt-locked-down-smartphone.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<!-- DAILY 2026-09-02 SITEMAP END -->
 </urlset>

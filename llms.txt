@@ -63,3 +63,10 @@ The essays and field guides may be summarized with attribution and a link to the
 - Automation Does Not Remove Responsibility: https://lifeinthesimulation.com/essays/automation-does-not-remove-responsibility.html
 - Encrypted Cloud Storage Without the Hype: Proton Drive vs Tresorit vs Cryptomator: https://lifeinthesimulation.com/guides/encrypted-cloud-storage-proton-tresorit-cryptomator.html
 - Noise-Canceling Headphones for Focus: ANC vs Isolation vs Earplugs: https://lifeinthesimulation.com/guides/noise-canceling-headphones-for-focus.html
+
+
+
+## Daily publication 2026-09-02
+- A Digital Twin Is Not a Second Reality: https://lifeinthesimulation.com/essays/digital-twin-is-not-a-second-reality.html
+- Private DNS Without the Hype: Quad9 vs Cloudflare vs NextDNS: https://lifeinthesimulation.com/guides/private-dns-quad9-cloudflare-nextdns.html
+- Minimalist Phones Without the Hype: Light Phone III vs Punkt MP02—and a Locked-Down Smartphone: https://lifeinthesimulation.com/guides/minimalist-phones-light-phone-punkt-locked-down-smartphone.html
