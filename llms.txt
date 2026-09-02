@@ -65,7 +65,6 @@ The essays and field guides may be summarized with attribution and a link to the
 - Noise-Canceling Headphones for Focus: ANC vs Isolation vs Earplugs: https://lifeinthesimulation.com/guides/noise-canceling-headphones-for-focus.html
 
 
-
 ## Daily publication 2026-09-02
 - A Digital Twin Is Not a Second Reality: https://lifeinthesimulation.com/essays/digital-twin-is-not-a-second-reality.html
 - Private DNS Without the Hype: Quad9 vs Cloudflare vs NextDNS: https://lifeinthesimulation.com/guides/private-dns-quad9-cloudflare-nextdns.html
