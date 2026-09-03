@@ -69,3 +69,9 @@ The essays and field guides may be summarized with attribution and a link to the
 - A Digital Twin Is Not a Second Reality: https://lifeinthesimulation.com/essays/digital-twin-is-not-a-second-reality.html
 - Private DNS Without the Hype: Quad9 vs Cloudflare vs NextDNS: https://lifeinthesimulation.com/guides/private-dns-quad9-cloudflare-nextdns.html
 - Minimalist Phones Without the Hype: Light Phone III vs Punkt MP02—and a Locked-Down Smartphone: https://lifeinthesimulation.com/guides/minimalist-phones-light-phone-punkt-locked-down-smartphone.html
+
+
+## Daily publication 2026-09-03
+- The Default Is a Decision Someone Else Made: https://lifeinthesimulation.com/essays/the-default-is-a-decision-someone-else-made.html
+- Personal Threat Modeling for Ordinary People: https://lifeinthesimulation.com/guides/personal-threat-modeling-for-ordinary-people.html
+- Paper Planning Systems for Focus: Time-Blocking vs Bullet Journal vs Index Cards: https://lifeinthesimulation.com/guides/paper-planning-systems-for-focus.html
