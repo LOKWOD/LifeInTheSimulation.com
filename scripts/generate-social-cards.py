@@ -110,7 +110,7 @@ def save_webp(image: Image.Image, destination: Path) -> None:
     image.save(destination, "WEBP", quality=84, method=6)
 
 
-html_files = sorted(file for file in ROOT.rglob("*.html") if file.name != "404.html" and "_site" not in file.parts)
+html_files = sorted(file for file in ROOT.rglob("*.html") if file.name != "404.html")
 for file in html_files:
     stem, title, category = page_info(file)
     save_webp(card(title, category, (1200, 630)), OUT / f"{stem}-social.webp")
