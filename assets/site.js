@@ -128,7 +128,7 @@
   const filterGroup = $('[data-filter-group]');
   const searchInput = $('[data-filter-search]');
   if (filterContainer && (filterGroup || searchInput)) {
-    const cards = $$('.filter-card', filterContainer);
+    const cards = $$('.filter-card');
     const count = $('[data-result-count]');
     const empty = $('[data-no-results]');
     const params = new URLSearchParams(location.search);

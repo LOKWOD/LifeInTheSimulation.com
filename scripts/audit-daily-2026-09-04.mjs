@@ -72,10 +72,12 @@ for (const rel of today) {
 }
 
 const feed = readFileSync(join(root, "feed.xml"), "utf8"), sitemap = readFileSync(join(root, "sitemap.xml"), "utf8"), credits = readFileSync(join(root, "assets", "visuals", "credits.json"), "utf8");
+const siteJs = readFileSync(join(root, "assets", "site.js"), "utf8");
 const essaysArchive = readFileSync(join(root, "essays.html"), "utf8"), guidesArchive = readFileSync(join(root, "field-guides.html"), "utf8"), home = readFileSync(join(root, "index.html"), "utf8");
 if (!/>32<\/span> transmissions available/.test(essaysArchive)) fail("essays archive: stale result count");
 if (!/>33<\/span> protocols available/.test(guidesArchive)) fail("field guides archive: stale result count");
 if (!/>32<\/dt><dd>Essays/.test(home) || !/>33<\/dt><dd>Field guides/.test(home)) fail("homepage: stale library counts");
+if (!siteJs.includes("const cards = $$('.filter-card');")) fail("archive filter: search/count remains scoped to the legacy card grid");
 for (const rel of today) {
   const url = `https://lifeinthesimulation.com/${rel}`;
   if (count(feed, new RegExp(escapeRe(url), "g")) !== 2) fail(`feed: ${url} must appear exactly twice`);

@@ -37,6 +37,22 @@ for (const page of pages) {
   const full = join(root, page.path); mkdirSync(dirname(full), { recursive: true }); writeFileSync(full, render(page));
 }
 
+// The original archive filter was scoped to the first legacy card grid, so
+// JavaScript replaced the true archive totals with 12 essays or 7 guides and
+// could not search later publication sections. Filter every archive card on
+// archive pages; the setup block still runs only when the archive controls exist.
+{
+  const siteJsPath = join(root, "assets", "site.js");
+  let siteJs = readFileSync(siteJsPath, "utf8");
+  const scoped = "const cards = $$('.filter-card', filterContainer);";
+  const global = "const cards = $$('.filter-card');";
+  // A function replacement preserves the literal `$$`; replacement-string
+  // syntax would collapse it to a single dollar sign.
+  if (siteJs.includes(scoped)) siteJs = siteJs.replace(scoped, () => global);
+  else if (!siteJs.includes(global)) throw new Error("Archive filter card scope anchor missing in assets/site.js");
+  writeFileSync(siteJsPath, siteJs);
+}
+
 const [essay, paperGuide, scannerGuide] = pages;
 const card = (page) => `<a class="content-card filter-card" href="/${page.path}" data-category="${page.category.toLowerCase()}" data-search="${page.title.toLowerCase()} ${page.description.toLowerCase()} ${page.category.toLowerCase()}"><div class="card-top"><span class="tag">${page.category}</span><span class="transmission">${page.id}</span></div><h3>${page.title}</h3><p>${page.description}</p><div class="card-meta"><span>${page.type === "essay" ? "Evidence essay" : "Decision guide"}</span><span>${page.type === "essay" ? "Read transmission" : "Open field guide"} <b>↗</b></span></div></a>`;
 upsert("essays.html", "DAILY 2026-09-04 ESSAY", `<section class="section section-pad"><div class="section-heading"><div><p class="eyebrow">LATEST TRANSMISSION</p><h2>Uncertainty is part of the result.</h2></div></div><div class="content-grid three">${card(essay)}</div></section>`);
