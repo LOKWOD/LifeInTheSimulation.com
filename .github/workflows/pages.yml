@@ -26,6 +26,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
       - name: Assemble polished site
         run: |
           rm -rf _site
@@ -49,6 +52,13 @@ jobs:
           node scripts/publish-daily-2026-09-02.mjs _site
           node scripts/publish-daily-2026-09-03.mjs _site
           node scripts/publish-daily-2026-09-04.mjs _site
+      - name: Apply durable SEO, trust and discovery layer
+        run: |
+          cp assets/style.css _site/assets/style.css
+          node scripts/optimize-seo.mjs _site
+          python -m pip install --disable-pip-version-check --quiet Pillow==11.3.0
+          python scripts/generate-social-cards.py _site
+          node scripts/optimize-seo.mjs _site
       - name: Normalize and verify Cloudflare Web Analytics
         shell: python
         run: |
@@ -91,6 +101,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
-          git commit -m "Publish second Life in the Simulation expansion"
+          git commit -m "Publish verified Life in the Simulation site"
           git pull --rebase origin main
           git push origin HEAD:main

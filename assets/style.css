@@ -8,7 +8,7 @@
   --text:#f2f5f7;
   --text-soft:#c7ced7;
   --muted:#94a0af;
-  --faint:#687484;
+  --faint:#8491a3;
   --line:#222b39;
   --line-strong:#334052;
   --accent:#8af4cb;
@@ -34,7 +34,7 @@ html[data-theme="light"]{
   --text:#12151b;
   --text-soft:#363c46;
   --muted:#626b78;
-  --faint:#858d98;
+  --faint:#5e6875;
   --line:#d5d3cb;
   --line-strong:#b9b7af;
   --accent:#117d62;
@@ -579,6 +579,16 @@ html[data-theme="light"] .archive-tools{background:rgba(241,240,235,.92)}
 .article-endnote{border:1px solid var(--line);border-radius:16px;padding:32px;background:var(--surface)}
 .article-endnote h2{font-size:2rem;margin:.25em 0 .5em}
 .article-endnote p:last-child{font:400 .9rem/1.7 var(--sans);margin:0;color:var(--muted)}
+.editorial-byline a{color:var(--text-soft);text-decoration-color:var(--line-strong);text-underline-offset:3px}
+.editorial-byline a:hover{color:var(--accent)}
+.seo-depth{margin:3.2em 0;padding:30px;border:1px solid var(--line);border-radius:16px;background:var(--surface)}
+.seo-depth h2{margin-top:0}
+.seo-depth p,.seo-depth ul{font-family:var(--serif);font-size:1.04rem;line-height:1.78;color:var(--text-soft)}
+.seo-depth li{margin:.42em 0}
+.topic-trail{margin:3em 0 0;padding:18px 20px;border:1px solid var(--line);border-radius:12px;display:flex;align-items:center;justify-content:space-between;gap:20px;background:var(--surface)}
+.topic-trail>span{font:800 .58rem var(--mono);letter-spacing:.1em;color:var(--faint)}
+.topic-trail a{font-size:.82rem;font-weight:800;text-decoration:none;color:var(--text)}
+.topic-trail a:hover{color:var(--accent)}
 .action-card{border:1px solid var(--line);border-radius:12px;padding:16px;background:var(--surface);display:grid;gap:8px;margin-bottom:12px}
 .action-card>span{font:800 .57rem var(--mono);letter-spacing:.1em;color:var(--faint);padding-bottom:7px}
 .action-card button,.action-card a{
@@ -589,6 +599,9 @@ html[data-theme="light"] .archive-tools{background:rgba(241,240,235,.92)}
 .action-card a{display:flex;justify-content:space-between;gap:10px}
 .action-card.quiet{background:transparent}
 .related-section{padding-top:90px}
+.topic-method{display:grid;grid-template-columns:1fr 1fr;gap:90px}
+.topic-method h2{margin:.2em 0}
+.topic-index{content-visibility:auto;contain-intrinsic-size:900px}
 
 /* Guides */
 .guide-hero .article-code span,.guide-page .tag{color:var(--violet)}

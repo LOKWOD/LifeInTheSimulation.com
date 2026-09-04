@@ -1,83 +1,98 @@
 # Life in the Simulation
 
-Life in the Simulation is an independent publication about simulation theory, consciousness, artificial intelligence, attention, systems and deliberate living.
+> Evidence-aware essays and practical field guides about simulation theory, consciousness, artificial intelligence, attention, privacy and modern digital life.
+
+Canonical site: https://lifeinthesimulation.com/
+Editorial policy: https://lifeinthesimulation.com/editorial-policy.html
 
 ## Core pages
-- https://lifeinthesimulation.com/start-here.html
-- https://lifeinthesimulation.com/essays.html
-- https://lifeinthesimulation.com/field-guides.html
-- https://lifeinthesimulation.com/signals.html
-- https://lifeinthesimulation.com/glossary.html
-- https://lifeinthesimulation.com/experiments.html
 
-<!-- DAILY 2026-08-22 CONTENT START -->
-## Latest additions
-- https://lifeinthesimulation.com/essays/ai-accuracy-is-not-understanding.html — A Model Can Be Right for the Wrong Reason
-- https://lifeinthesimulation.com/guides/best-books-to-understand-ai.html — The Best Books to Understand AI Without the Hype
-<!-- DAILY 2026-08-22 CONTENT END -->
-<!-- DAILY 2026-08-23 CONTENT START -->
-## Latest additions
-- https://lifeinthesimulation.com/essays/dreams-are-not-evidence-of-simulation.html — Dreams Are Not Evidence That Reality Is Simulated
-- https://lifeinthesimulation.com/guides/e-ink-writing-tablets-for-focus.html — E-Ink Writing Tablets for Focus: reMarkable vs Supernote vs BOOX
-<!-- DAILY 2026-08-23 CONTENT END -->
-## Editorial standard
-Simulation theory is treated as a hypothesis, not an established fact. Scientific evidence, philosophical argument and speculation should remain distinguishable. The site's practical goal is clearer judgment and more deliberate use of technology.
+- [Most of modern life happens one layer away from reality.](https://lifeinthesimulation.com/)
+- [A publication about reality without pretending to own it.](https://lifeinthesimulation.com/about.html)
+- [Editorial Policy](https://lifeinthesimulation.com/editorial-policy.html)
+- [Essays for a world becoming difficult to distinguish from its interfaces.](https://lifeinthesimulation.com/essays.html)
+- [Thought experiments for the world you actually inhabit.](https://lifeinthesimulation.com/experiments.html)
+- [Tools for staying human inside the system.](https://lifeinthesimulation.com/field-guides.html)
+- [The language of the rendered world.](https://lifeinthesimulation.com/glossary.html)
+- [A quiet site should not need to watch everything you do.](https://lifeinthesimulation.com/privacy.html)
+- [Signals worth noticing.](https://lifeinthesimulation.com/signals.html)
+- [A clear route through a world of layers, models and machines.](https://lifeinthesimulation.com/start-here.html)
+- [Topics](https://lifeinthesimulation.com/topics.html)
 
-## Content
-The essays and field guides may be summarized with attribution and a link to the original page.
+## Topic paths
 
+- [AI, Knowledge & Understanding](https://lifeinthesimulation.com/topics/ai-knowledge.html)
+- [Attention, Agency & Digital Life](https://lifeinthesimulation.com/topics/attention-agency.html)
+- [Privacy, Security & Digital Boundaries](https://lifeinthesimulation.com/topics/privacy-security.html)
+- [Simulation Theory & Reality](https://lifeinthesimulation.com/topics/simulation-theory.html)
 
-## Daily publication 2026-08-24
-- The Feeling of Understanding Is Not Understanding: https://lifeinthesimulation.com/essays/the-feeling-of-understanding-is-not-understanding.html
-- Password Managers Without the Hype: Bitwarden vs 1Password vs Proton Pass vs KeePassXC: https://lifeinthesimulation.com/guides/password-managers-without-the-hype.html
+## Essays
 
+- [A Model Can Be Right for the Wrong Reason](https://lifeinthesimulation.com/essays/ai-accuracy-is-not-understanding.html)
+- [When the Internet Is Full of AI Agents](https://lifeinthesimulation.com/essays/ai-agents-and-the-internet-of-strangers.html)
+- [AI and the End of Knowing Who Made What](https://lifeinthesimulation.com/essays/ai-and-the-end-of-knowing.html)
+- [Your Algorithm Is Becoming Your Reality](https://lifeinthesimulation.com/essays/algorithmic-reality.html)
+- [The Attention Economy Is a Reality Engine](https://lifeinthesimulation.com/essays/attention-economy-is-a-reality-engine.html)
+- [Automation Does Not Remove Responsibility](https://lifeinthesimulation.com/essays/automation-does-not-remove-responsibility.html)
+- [Confidence Is Not the Same as Calibration](https://lifeinthesimulation.com/essays/confidence-is-not-calibration.html)
+- [Consciousness Is Still the Weird Part](https://lifeinthesimulation.com/essays/consciousness-is-the-weird-part.html)
+- [Is the Universe Made of Information?](https://lifeinthesimulation.com/essays/digital-physics-and-information.html)
+- [A Digital Twin Is Not a Second Reality](https://lifeinthesimulation.com/essays/digital-twin-is-not-a-second-reality.html)
+- [Dreams Are Not Evidence That Reality Is Simulated](https://lifeinthesimulation.com/essays/dreams-are-not-evidence-of-simulation.html)
+- [Emergence Is Not an Explanation by Itself](https://lifeinthesimulation.com/essays/emergence-is-not-an-explanation.html)
+- [The Extended Mind Is Already Here](https://lifeinthesimulation.com/essays/extended-mind-is-already-here.html)
+- [Friction Is a Feature](https://lifeinthesimulation.com/essays/friction-is-a-feature.html)
+- [Meaning After Automation](https://lifeinthesimulation.com/essays/meaning-after-automation.html)
+- [Your Memory Is Not a Recording—and That Does Not Make It Useless](https://lifeinthesimulation.com/essays/memory-is-not-a-recording.html)
+- [Neuroscience Has Not Disproved Free Will](https://lifeinthesimulation.com/essays/neuroscience-has-not-disproved-free-will.html)
+- [Predictive Processing Does Not Mean Reality Is a Hallucination](https://lifeinthesimulation.com/essays/predictive-processing-does-not-mean-reality-is-a-hallucination.html)
+- [The Real World Is Becoming a Premium Experience](https://lifeinthesimulation.com/essays/real-world-is-premium.html)
+- [The Scoreboards We Mistake for Life](https://lifeinthesimulation.com/essays/scoreboards-we-mistake-for-life.html)
+- [Search Before Wonder](https://lifeinthesimulation.com/essays/search-before-wonder.html)
+- [The Simulation Hypothesis Without the Hype](https://lifeinthesimulation.com/essays/simulation-hypothesis-without-the-hype.html)
+- [The Comfort of Predictable Algorithms](https://lifeinthesimulation.com/essays/the-comfort-of-predictable-algorithms.html)
+- [The Default Is a Decision Someone Else Made](https://lifeinthesimulation.com/essays/the-default-is-a-decision-someone-else-made.html)
+- [The Feeling of Understanding Is Not Understanding](https://lifeinthesimulation.com/essays/the-feeling-of-understanding-is-not-understanding.html)
+- [The Intimacy of Machines](https://lifeinthesimulation.com/essays/the-intimacy-of-machines.html)
+- [The Scoreboard Self](https://lifeinthesimulation.com/essays/the-scoreboard-self.html)
+- [Uncertainty Is Information, Not Failure](https://lifeinthesimulation.com/essays/uncertainty-is-information-not-failure.html)
+- [What Would Count as Evidence That Reality Is Simulated?](https://lifeinthesimulation.com/essays/what-would-count-as-evidence.html)
+- [When Everything Becomes Content](https://lifeinthesimulation.com/essays/when-everything-is-content.html)
+- [Why Boredom Feels Dangerous Now](https://lifeinthesimulation.com/essays/why-boredom-feels-dangerous.html)
+- [Why Time Feels Faster Online](https://lifeinthesimulation.com/essays/why-time-feels-faster-online.html)
 
-## Daily publication 2026-08-25
-- Your Memory Is Not a Recording—and That Does Not Make It Useless: https://lifeinthesimulation.com/essays/memory-is-not-a-recording.html
-- Hardware Security Keys Without the Hype: Yubico vs Google Titan—and the No-Buy Option: https://lifeinthesimulation.com/guides/hardware-security-keys-without-the-hype.html
+## Field guides
 
-
-## Daily publication 2026-08-26
-- Neuroscience Has Not Disproved Free Will: https://lifeinthesimulation.com/essays/neuroscience-has-not-disproved-free-will.html
-- Private Note-Taking Apps: Standard Notes vs Joplin vs Obsidian—and Paper: https://lifeinthesimulation.com/guides/private-note-taking-apps.html
-
-
-## Daily publication 2026-08-27
-- Predictive Processing Does Not Mean Reality Is a Hallucination: https://lifeinthesimulation.com/essays/predictive-processing-does-not-mean-reality-is-a-hallucination.html
-- Website Blockers for Focus: Freedom vs Cold Turkey vs Screen Time—and the No-Buy Option: https://lifeinthesimulation.com/guides/website-blockers-for-focus.html
-
-
-## Daily publication 2026-08-30
-- Emergence Is Not an Explanation by Itself: https://lifeinthesimulation.com/essays/emergence-is-not-an-explanation.html
-- RSS Readers for a Calmer Internet: Feedly vs Inoreader vs NetNewsWire: https://lifeinthesimulation.com/guides/rss-readers-for-a-calmer-internet.html
-- What AI Chatbots Remember: ChatGPT vs Claude vs Gemini Memory Controls: https://lifeinthesimulation.com/guides/ai-memory-controls-chatgpt-claude-gemini.html
-
-
-## Daily publication 2026-08-31
-- Confidence Is Not the Same as Calibration: https://lifeinthesimulation.com/essays/confidence-is-not-calibration.html
-- Private Web Browsers Without the Hype: Firefox vs Brave vs Safari: https://lifeinthesimulation.com/guides/private-web-browsers-firefox-brave-safari.html
-- Local AI Without the Hype: Ollama vs LM Studio—and When Cloud Is Better: https://lifeinthesimulation.com/guides/local-ai-ollama-vs-lm-studio.html
-
-
-## Daily publication 2026-09-01
-- Automation Does Not Remove Responsibility: https://lifeinthesimulation.com/essays/automation-does-not-remove-responsibility.html
-- Encrypted Cloud Storage Without the Hype: Proton Drive vs Tresorit vs Cryptomator: https://lifeinthesimulation.com/guides/encrypted-cloud-storage-proton-tresorit-cryptomator.html
-- Noise-Canceling Headphones for Focus: ANC vs Isolation vs Earplugs: https://lifeinthesimulation.com/guides/noise-canceling-headphones-for-focus.html
-
-
-## Daily publication 2026-09-02
-- A Digital Twin Is Not a Second Reality: https://lifeinthesimulation.com/essays/digital-twin-is-not-a-second-reality.html
-- Private DNS Without the Hype: Quad9 vs Cloudflare vs NextDNS: https://lifeinthesimulation.com/guides/private-dns-quad9-cloudflare-nextdns.html
-- Minimalist Phones Without the Hype: Light Phone III vs Punkt MP02—and a Locked-Down Smartphone: https://lifeinthesimulation.com/guides/minimalist-phones-light-phone-punkt-locked-down-smartphone.html
-
-
-## Daily publication 2026-09-03
-- The Default Is a Decision Someone Else Made: https://lifeinthesimulation.com/essays/the-default-is-a-decision-someone-else-made.html
-- Personal Threat Modeling for Ordinary People: https://lifeinthesimulation.com/guides/personal-threat-modeling-for-ordinary-people.html
-- Paper Planning Systems for Focus: Time-Blocking vs Bullet Journal vs Index Cards: https://lifeinthesimulation.com/guides/paper-planning-systems-for-focus.html
-
-
-## Daily publication 2026-09-04
-- Uncertainty Is Information, Not Failure: https://lifeinthesimulation.com/essays/uncertainty-is-information-not-failure.html
-- How to Read a Scientific Paper Without Borrowing Its Confidence: https://lifeinthesimulation.com/guides/how-to-read-a-scientific-paper.html
-- Document Scanners Without the Hype: ScanSnap iX2500 vs Brother ADS-1800W—and Your Phone: https://lifeinthesimulation.com/guides/document-scanners-without-the-hype.html
+- [What AI Chatbots Remember: ChatGPT vs Claude vs Gemini Memory Controls](https://lifeinthesimulation.com/guides/ai-memory-controls-chatgpt-claude-gemini.html)
+- [The Analog Saturday Protocol](https://lifeinthesimulation.com/guides/analog-saturday-protocol.html)
+- [The Seven-Day Attention Reset](https://lifeinthesimulation.com/guides/attention-reset.html)
+- [The Best Books to Understand AI Without the Hype](https://lifeinthesimulation.com/guides/best-books-to-understand-ai.html)
+- [Keep a Decision Journal](https://lifeinthesimulation.com/guides/decision-journal.html)
+- [The Deep Work Field Manual](https://lifeinthesimulation.com/guides/deep-work-field-manual.html)
+- [The Digital Environment Reset](https://lifeinthesimulation.com/guides/digital-environment-reset.html)
+- [The Direct Experience Week](https://lifeinthesimulation.com/guides/direct-experience-week.html)
+- [Document Scanners Without the Hype: ScanSnap iX2500 vs Brother ADS-1800W—and Your Phone](https://lifeinthesimulation.com/guides/document-scanners-without-the-hype.html)
+- [E-Ink Writing Tablets for Focus: reMarkable vs Supernote vs BOOX](https://lifeinthesimulation.com/guides/e-ink-writing-tablets-for-focus.html)
+- [Encrypted Cloud Storage Without the Hype: Proton Drive vs Tresorit vs Cryptomator](https://lifeinthesimulation.com/guides/encrypted-cloud-storage-proton-tresorit-cryptomator.html)
+- [Hardware Security Keys Without the Hype: Yubico vs Google Titan—and the No-Buy Option](https://lifeinthesimulation.com/guides/hardware-security-keys-without-the-hype.html)
+- [How to Read a Scientific Paper Without Borrowing Its Confidence](https://lifeinthesimulation.com/guides/how-to-read-a-scientific-paper.html)
+- [Build an Information Diet](https://lifeinthesimulation.com/guides/information-diet.html)
+- [Local AI Without the Hype: Ollama vs LM Studio—and When Cloud Is Better](https://lifeinthesimulation.com/guides/local-ai-ollama-vs-lm-studio.html)
+- [Minimalist Phones Without the Hype: Light Phone III vs Punkt MP02—and a Locked-Down Smartphone](https://lifeinthesimulation.com/guides/minimalist-phones-light-phone-punkt-locked-down-smartphone.html)
+- [Noise-Canceling Headphones for Focus: ANC vs Isolation vs Earplugs](https://lifeinthesimulation.com/guides/noise-canceling-headphones-for-focus.html)
+- [Paper Planning Systems for Focus: Time-Blocking vs Bullet Journal vs Index Cards](https://lifeinthesimulation.com/guides/paper-planning-systems-for-focus.html)
+- [Password Managers Without the Hype: Bitwarden vs 1Password vs Proton Pass vs KeePassXC](https://lifeinthesimulation.com/guides/password-managers-without-the-hype.html)
+- [Audit Your Personal Algorithm](https://lifeinthesimulation.com/guides/personal-algorithm-audit.html)
+- [Personal Data Minimization for Ordinary People](https://lifeinthesimulation.com/guides/personal-data-minimization.html)
+- [Build a Personal Information Diet](https://lifeinthesimulation.com/guides/personal-information-diet.html)
+- [Personal Threat Modeling for Ordinary People](https://lifeinthesimulation.com/guides/personal-threat-modeling-for-ordinary-people.html)
+- [Private DNS Without the Hype: Quad9 vs Cloudflare vs NextDNS](https://lifeinthesimulation.com/guides/private-dns-quad9-cloudflare-nextdns.html)
+- [Private Note-Taking Apps: Standard Notes vs Joplin vs Obsidian—and Paper](https://lifeinthesimulation.com/guides/private-note-taking-apps.html)
+- [Private Web Browsers Without the Hype: Firefox vs Brave vs Safari](https://lifeinthesimulation.com/guides/private-web-browsers-firefox-brave-safari.html)
+- [Run a Reality Audit](https://lifeinthesimulation.com/guides/reality-audit.html)
+- [Rebuild a Private Inner Life](https://lifeinthesimulation.com/guides/rebuild-a-private-inner-life.html)
+- [RSS Readers for a Calmer Internet: Feedly vs Inoreader vs NetNewsWire](https://lifeinthesimulation.com/guides/rss-readers-for-a-calmer-internet.html)
+- [Synthetic Media Check](https://lifeinthesimulation.com/guides/synthetic-media-checklist.html)
+- [The 30-Day Attention Experiment](https://lifeinthesimulation.com/guides/thirty-day-attention-experiment.html)
+- [Website Blockers for Focus: Freedom vs Cold Turkey vs Screen Time—and the No-Buy Option](https://lifeinthesimulation.com/guides/website-blockers-for-focus.html)
+- [The Weekly Reality Check](https://lifeinthesimulation.com/guides/weekly-reality-check.html)
