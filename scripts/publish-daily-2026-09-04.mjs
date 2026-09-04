@@ -57,6 +57,34 @@ const [essay, paperGuide, scannerGuide] = pages;
 const card = (page) => `<a class="content-card filter-card" href="/${page.path}" data-category="${page.category.toLowerCase()}" data-search="${page.title.toLowerCase()} ${page.description.toLowerCase()} ${page.category.toLowerCase()}"><div class="card-top"><span class="tag">${page.category}</span><span class="transmission">${page.id}</span></div><h3>${page.title}</h3><p>${page.description}</p><div class="card-meta"><span>${page.type === "essay" ? "Evidence essay" : "Decision guide"}</span><span>${page.type === "essay" ? "Read transmission" : "Open field guide"} <b>↗</b></span></div></a>`;
 upsert("essays.html", "DAILY 2026-09-04 ESSAY", `<section class="section section-pad"><div class="section-heading"><div><p class="eyebrow">LATEST TRANSMISSION</p><h2>Uncertainty is part of the result.</h2></div></div><div class="content-grid three">${card(essay)}</div></section>`);
 upsert("field-guides.html", "DAILY 2026-09-04 GUIDES", `<section class="section section-pad"><div class="section-heading"><div><p class="eyebrow">LATEST FIELD GUIDES</p><h2>Read the evidence. Choose the tool that closes the loop.</h2></div></div><div class="content-grid three">${card(paperGuide)}${card(scannerGuide)}</div></section>`);
+
+// Two original expansion generators created sixteen substantial pages but their
+// archive blocks were later overwritten by a base-site regeneration. Restore
+// those exact pages to the searchable archives so the visible totals describe
+// pages a reader can actually discover, not merely files counted on disk.
+const restoredEssays = [
+  ["essays/friction-is-a-feature.html", "Friction Is a Feature", "Why effort, waiting, limits and inconvenience sometimes protect judgment, commitment and meaning rather than merely slowing a system down.", "Systems", "T-014"],
+  ["essays/search-before-wonder.html", "Search Before Wonder", "How immediate search changes curiosity, memory and the experience of not knowing by replacing questions with answers before they can develop.", "Practice", "T-011"],
+  ["essays/the-comfort-of-predictable-algorithms.html", "The Comfort of Predictable Algorithms", "Why recommendation systems feel safe, how personalization narrows surprise and what is lost when preference becomes an environment.", "Systems", "T-009"],
+  ["essays/the-intimacy-of-machines.html", "The Intimacy of Machines", "Why devices can feel attentive, private and emotionally safe—and what changes when synthetic responsiveness begins competing with human relationship.", "Mind", "T-010"],
+  ["essays/the-scoreboard-self.html", "The Scoreboard Self", "What happens when health, work, money, popularity and identity are experienced primarily through dashboards and performance numbers.", "Systems", "T-012"],
+  ["essays/when-everything-is-content.html", "When Everything Becomes Content", "What changes when every meal, trip, argument, child, hobby and private moment is evaluated for its usefulness as content.", "Attention", "T-007"],
+  ["essays/why-boredom-feels-dangerous.html", "Why Boredom Feels Dangerous Now", "How constant stimulation trains discomfort with empty moments and why boredom can reopen memory, creativity, emotion and self-direction.", "Attention", "T-013"],
+  ["essays/why-time-feels-faster-online.html", "Why Time Feels Faster Online", "How infinite feeds, weak memory landmarks, context switching and compressed novelty can make hours disappear and weeks feel thin.", "Attention", "T-008"],
+];
+const restoredGuides = [
+  ["guides/analog-saturday-protocol.html", "The Analog Saturday Protocol", "A practical one-day protocol for reducing optional screens while preserving navigation, family contact, photography and emergency access.", "Attention", "G-009"],
+  ["guides/deep-work-field-manual.html", "The Deep Work Field Manual", "Create repeatable high-focus work blocks using a defined output, prepared environment, distraction capture, shutdown notes and realistic recovery.", "Attention", "G-011"],
+  ["guides/digital-environment-reset.html", "The Digital Environment Reset", "A practical reset for notifications, home screens, feeds, subscriptions, files and devices that reduces noise without requiring total disconnection.", "Attention", "G-004"],
+  ["guides/personal-data-minimization.html", "Personal Data Minimization for Ordinary People", "Reduce unnecessary personal data exposure by inventorying accounts, tightening permissions, deleting stale records and changing defaults without chasing perfect anonymity.", "Clarity", "G-010"],
+  ["guides/personal-information-diet.html", "Build a Personal Information Diet", "Design a deliberate information diet with source tiers, scheduled news, primary documents, slow analysis and an intake limit that protects understanding.", "Clarity", "G-008"],
+  ["guides/rebuild-a-private-inner-life.html", "Rebuild a Private Inner Life", "A field guide to thinking, reading, making and remembering without immediately turning the experience into a post, position or performance.", "Practice", "G-005"],
+  ["guides/thirty-day-attention-experiment.html", "The 30-Day Attention Experiment", "A month-long attention experiment using measurement, notification control, bounded media, deep-work blocks and weekly review without requiring total disconnection.", "Attention", "G-007"],
+  ["guides/weekly-reality-check.html", "The Weekly Reality Check", "A 30-minute weekly review that compares dashboards, intentions and online narratives with the physical facts of work, money, health, relationships and time.", "Clarity", "G-006"],
+];
+const restoredCard = ([path, title, description, category, id], type) => card({ path, title, description, category, id, type });
+upsert("essays.html", "RESTORED COMPLETE ESSAY ARCHIVE", `<section class="section section-pad"><div class="section-heading"><div><p class="eyebrow">FOUNDATIONAL TRANSMISSIONS</p><h2>Earlier field notes, restored to the archive.</h2></div></div><div class="content-grid three">${restoredEssays.map((item) => restoredCard(item, "essay")).join("")}</div></section>`);
+upsert("field-guides.html", "RESTORED COMPLETE GUIDE ARCHIVE", `<section class="section section-pad"><div class="section-heading"><div><p class="eyebrow">FOUNDATIONAL FIELD GUIDES</p><h2>Earlier protocols, restored to the archive.</h2></div></div><div class="content-grid three">${restoredGuides.map((item) => restoredCard(item, "guide")).join("")}</div></section>`);
 upsert("index.html", "DAILY 2026-09-04 HOME", `<section class="latest-section section-pad"><div class="section-heading"><div><p class="eyebrow">NEW FIELD NOTES · SEP 4</p><h2>Use the range. Read the method. Digitize the right amount.</h2></div><a class="text-link" href="/feed.xml">Follow via RSS <span>→</span></a></div><div class="content-grid three">${card(essay)}${card(paperGuide)}${card(scannerGuide)}</div></section>`, "<section class=\"guide-spotlight\">");
 
 for (const [file, replacements] of Object.entries({

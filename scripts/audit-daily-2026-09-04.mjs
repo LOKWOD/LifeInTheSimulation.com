@@ -78,6 +78,19 @@ if (!/>32<\/span> transmissions available/.test(essaysArchive)) fail("essays arc
 if (!/>33<\/span> protocols available/.test(guidesArchive)) fail("field guides archive: stale result count");
 if (!/>32<\/dt><dd>Essays/.test(home) || !/>33<\/dt><dd>Field guides/.test(home)) fail("homepage: stale library counts");
 if (!siteJs.includes("const cards = $$('.filter-card');")) fail("archive filter: search/count remains scoped to the legacy card grid");
+const archiveCoverage = [
+  ["essays", essaysArchive, 32],
+  ["guides", guidesArchive, 33],
+];
+for (const [directory, archive, expected] of archiveCoverage) {
+  const publishedFiles = readdirSync(join(root, directory)).filter((name) => name.endsWith(".html"));
+  const linkedFiles = new Set([...archive.matchAll(new RegExp(`href="/${directory}/([^\"]+\\.html)"`, "g"))].map((match) => match[1]));
+  if (publishedFiles.length !== expected) fail(`${directory} archive: expected ${expected} published files, found ${publishedFiles.length}`);
+  if (linkedFiles.size !== expected) fail(`${directory} archive: expected ${expected} unique searchable page links, found ${linkedFiles.size}`);
+  for (const file of publishedFiles) if (!linkedFiles.has(file)) fail(`${directory} archive: ${file} is not discoverable`);
+  const searchableCards = (archive.match(/class="[^"]*filter-card/g) || []).length;
+  if (searchableCards !== expected) fail(`${directory} archive: expected ${expected} searchable cards, found ${searchableCards}`);
+}
 for (const rel of today) {
   const url = `https://lifeinthesimulation.com/${rel}`;
   if (count(feed, new RegExp(escapeRe(url), "g")) !== 2) fail(`feed: ${url} must appear exactly twice`);
