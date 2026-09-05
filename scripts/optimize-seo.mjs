@@ -258,6 +258,10 @@ function normalizePage(file) {
     if (rel === "index.html") inserts.push(jsonScript({ "@context": "https://schema.org", "@type": "Organization", "@id": `${SITE}/#organization`, name: "Life in the Simulation", url: SITE, logo: { "@type": "ImageObject", url: `${SITE}/assets/publisher-logo.png`, width: 512, height: 512 }, publishingPrinciples: EDITOR_URL }));
     if (rel !== "index.html") inserts.push(jsonScript({ "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: breadcrumbItems }));
   }
+  // Removing the previous JSON-LD must not leave another blank line on every
+  // optimization pass. Normalize only the whitespace immediately before the
+  // closing head, then install the deterministic schema block.
+  html = html.replace(/\s*<\/head>/i, "\n</head>");
   html = html.replace(/<\/head>/i, `${inserts.join("\n")}\n</head>`);
 
   html = html.replace(/<header\b[^>]*class=["'][^"']*site-header[^"']*["'][^>]*>[\s\S]*?<\/header>/i, header);

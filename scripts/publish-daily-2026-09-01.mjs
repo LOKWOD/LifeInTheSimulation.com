@@ -58,7 +58,7 @@ upsert("guides/personal-data-minimization.html", "DAILY 2026-09-01 STORAGE", `<d
 upsert("guides/deep-work-field-manual.html", "DAILY 2026-09-01 SOUND", `<div class="article-callout"><strong>Shape the sound field</strong><span>Compare ANC, passive isolation and silence in <a href="/guides/noise-canceling-headphones-for-focus.html">Noise-Canceling Headphones for Focus</a>.</span></div>`, "</article>");
 
 let feed = readFileSync(join(root, "feed.xml"), "utf8").replace(/<lastBuildDate>[^<]+<\/lastBuildDate>/, `<lastBuildDate>${pubDate}</lastBuildDate>`).replace(/<!-- DAILY 2026-09-01 FEED START -->[\s\S]*?<!-- DAILY 2026-09-01 FEED END -->\n?/g, "");
-const feedItems = pages.map((page) => `<item><title>${page.title.replace(/&/g, "&amp;")}</title><link>${siteUrl}/${page.path}</link><guid isPermaLink="true">${siteUrl}/${page.path}</guid><pubDate>${pubDate}</pubDate><category>${page.category}</category><description>${page.description.replace(/&/g, "&amp;")}</description></item>`).join("\n");
+const feedItems = pages.map((page) => `<item><title>${page.title.replace(/&/g, "&amp;")}</title><link>${siteUrl}/${page.path}</link><guid isPermaLink="true">${siteUrl}/${page.path}</guid><pubDate>${pubDate}</pubDate><category>${page.category.replace(/&/g, "&amp;")}</category><description>${page.description.replace(/&/g, "&amp;")}</description></item>`).join("\n");
 const feedBlock = `<!-- DAILY 2026-09-01 FEED START -->\n${feedItems}\n<!-- DAILY 2026-09-01 FEED END -->\n`;
 feed = feed.includes("<!-- DAILY 2026-08-31 FEED START -->") ? feed.replace("<!-- DAILY 2026-08-31 FEED START -->", `${feedBlock}    <!-- DAILY 2026-08-31 FEED START -->`) : feed.replace(/\s*<item>/, `\n${feedBlock}<item>`);
 writeFileSync(join(root, "feed.xml"), feed);

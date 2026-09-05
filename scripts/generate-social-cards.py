@@ -107,7 +107,30 @@ def card(title: str, category: str, size: tuple[int, int]) -> Image.Image:
 
 
 def save_webp(image: Image.Image, destination: Path) -> None:
-    image.save(destination, "WEBP", quality=84, method=6)
+    # Social cards are deterministic, so preserve a valid existing asset. This
+    # also avoids exposing hundreds of good files to an unnecessary rewrite on
+    # every Pages build. New or invalid files are encoded and verified before
+    # the publication audit can pass.
+    if destination.exists() and destination.stat().st_size >= 1024:
+        try:
+            with Image.open(destination) as candidate:
+                candidate.verify()
+            return
+        except (OSError, SyntaxError):
+            pass
+    error: Exception | None = None
+    for _ in range(3):
+        try:
+            destination.unlink(missing_ok=True)
+            image.save(destination, "WEBP", quality=84, method=6)
+            if destination.stat().st_size < 1024:
+                raise OSError(f"generated WebP is unexpectedly small: {destination}")
+            with Image.open(destination) as candidate:
+                candidate.verify()
+            return
+        except (OSError, SyntaxError) as exception:
+            error = exception
+    raise OSError(f"could not create a valid social card at {destination}") from error
 
 
 html_files = sorted(file for file in ROOT.rglob("*.html") if file.name != "404.html")
