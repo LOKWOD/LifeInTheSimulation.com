@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-07",
+  "generated": "2026-09-08",
   "assets": [
     {
       "path": "/assets/visuals/dream-evidence-filter.svg",
@@ -201,6 +201,24 @@
     },
     {
       "path": "/assets/visuals/private-email-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original AI-assisted editorial photograph generated specifically for this page",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/ai-explanation-mechanism-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original AI-assisted editorial photograph generated specifically for this page",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/one-person-experiment-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original AI-assisted editorial photograph generated specifically for this page",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/e-reader-ecosystems-editorial.webp",
       "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
       "source": "Original AI-assisted editorial photograph generated specifically for this page",
       "license": "Copyright Life in the Simulation"

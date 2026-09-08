@@ -46,7 +46,10 @@ const publicationDates = {
   "guides/e-ink-writing-tablets-for-focus.html": "2026-08-23",
   "essays/self-model-is-not-a-fake-self.html": "2026-09-07",
   "guides/reversibility-test-for-decisions.html": "2026-09-07",
-  "guides/private-email-proton-tuta-fastmail.html": "2026-09-07"
+  "guides/private-email-proton-tuta-fastmail.html": "2026-09-07",
+  "essays/ai-explanation-is-not-the-mechanism.html": "2026-09-08",
+  "guides/how-to-run-a-one-person-experiment.html": "2026-09-08",
+  "guides/e-readers-kindle-kobo-boox-library.html": "2026-09-08"
 };
 
 const depth = {
@@ -86,8 +89,8 @@ const depth = {
 
 const topicDefs = [
   { slug: "simulation-theory", name: "Simulation Theory & Reality", dek: "A grounded route through the simulation hypothesis, digital physics, evidence and the limits of computational metaphors.", links: ["essays/simulation-hypothesis-without-the-hype.html", "essays/what-would-count-as-evidence.html", "essays/digital-physics-and-information.html", "essays/dreams-are-not-evidence-of-simulation.html", "essays/predictive-processing-does-not-mean-reality-is-a-hallucination.html", "essays/self-model-is-not-a-fake-self.html", "guides/reality-audit.html"] },
-  { slug: "ai-knowledge", name: "AI, Knowledge & Understanding", dek: "How to reason about model performance, automation, memory, explanation and the boundary between fluent output and justified knowledge.", links: ["essays/ai-accuracy-is-not-understanding.html", "essays/ai-and-the-end-of-knowing.html", "essays/the-feeling-of-understanding-is-not-understanding.html", "essays/automation-does-not-remove-responsibility.html", "guides/ai-memory-controls-chatgpt-claude-gemini.html", "guides/local-ai-ollama-vs-lm-studio.html", "guides/best-books-to-understand-ai.html"] },
-  { slug: "attention-agency", name: "Attention, Agency & Digital Life", dek: "Essays and practical protocols for understanding feeds, defaults, metrics and the systems competing to shape what you notice and choose.", links: ["essays/attention-economy-is-a-reality-engine.html", "essays/algorithmic-reality.html", "essays/the-default-is-a-decision-someone-else-made.html", "essays/the-scoreboard-self.html", "guides/attention-reset.html", "guides/personal-algorithm-audit.html", "guides/website-blockers-for-focus.html", "guides/deep-work-field-manual.html", "guides/reversibility-test-for-decisions.html"] },
+  { slug: "ai-knowledge", name: "AI, Knowledge & Understanding", dek: "How to reason about model performance, automation, memory, explanation and the boundary between fluent output and justified knowledge.", links: ["essays/ai-accuracy-is-not-understanding.html", "essays/ai-and-the-end-of-knowing.html", "essays/the-feeling-of-understanding-is-not-understanding.html", "essays/automation-does-not-remove-responsibility.html", "essays/ai-explanation-is-not-the-mechanism.html", "guides/ai-memory-controls-chatgpt-claude-gemini.html", "guides/local-ai-ollama-vs-lm-studio.html", "guides/best-books-to-understand-ai.html"] },
+  { slug: "attention-agency", name: "Attention, Agency & Digital Life", dek: "Essays and practical protocols for understanding feeds, defaults, metrics and the systems competing to shape what you notice and choose.", links: ["essays/attention-economy-is-a-reality-engine.html", "essays/algorithmic-reality.html", "essays/the-default-is-a-decision-someone-else-made.html", "essays/the-scoreboard-self.html", "guides/attention-reset.html", "guides/personal-algorithm-audit.html", "guides/website-blockers-for-focus.html", "guides/deep-work-field-manual.html", "guides/reversibility-test-for-decisions.html", "guides/how-to-run-a-one-person-experiment.html", "guides/e-readers-kindle-kobo-boox-library.html"] },
   { slug: "privacy-security", name: "Privacy, Security & Digital Boundaries", dek: "Practical, threat-model-based guidance for reducing exposure, protecting accounts and choosing tools without fear-based marketing.", links: ["guides/personal-threat-modeling-for-ordinary-people.html", "guides/personal-data-minimization.html", "guides/password-managers-without-the-hype.html", "guides/hardware-security-keys-without-the-hype.html", "guides/private-web-browsers-firefox-brave-safari.html", "guides/encrypted-cloud-storage-proton-tresorit-cryptomator.html", "guides/private-dns-quad9-cloudflare-nextdns.html", "guides/private-email-proton-tuta-fastmail.html"] }
 ];
 
@@ -131,6 +134,7 @@ function topicFor(rel, category, title) {
   const hay = `${rel} ${category} ${title}`.toLowerCase();
   if (rel === "essays/self-model-is-not-a-fake-self.html") return topicDefs[0];
   if (rel === "guides/reversibility-test-for-decisions.html") return topicDefs[2];
+  if (rel === "guides/how-to-run-a-one-person-experiment.html" || rel === "guides/e-readers-kindle-kobo-boox-library.html") return topicDefs[2];
   if (/privacy|security|password|browser|dns|cloud-storage|data-minimization|threat-model/.test(hay)) return topicDefs[3];
   if (/\bai\b|artificial|knowledge|understanding|automation|model|scientific-paper|information-diet/.test(hay)) return topicDefs[1];
   if (/attention|focus|algorithm|boredom|content|scoreboard|default|deep-work|analog|rss|time-feels/.test(hay)) return topicDefs[2];
