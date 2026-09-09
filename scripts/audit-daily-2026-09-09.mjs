@@ -108,5 +108,10 @@ const sitemapUrls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) =>
 if (sitemapUrls.length !== new Set(sitemapUrls).size) fail("sitemap: duplicate URLs");
 for (const [topic, rel] of [["topics/attention-agency.html", today[0]], ["topics/ai-knowledge.html", today[1]], ["topics/privacy-security.html", today[2]]]) if (!readFileSync(join(root, topic), "utf8").includes(`/${rel}`)) fail(`${topic}: missing today's curated link ${rel}`);
 
+for (const [rel, expectedTopic] of [[today[0], "/topics/attention-agency.html"], [today[1], "/topics/ai-knowledge.html"], [today[2], "/topics/privacy-security.html"]]) {
+  const html = readFileSync(join(root, rel), "utf8");
+  if (!html.includes(`<aside class="topic-trail"><span>CONTINUE BY TOPIC</span><a href="${expectedTopic}">`)) fail(`${rel}: incorrect topic trail; expected ${expectedTopic}`);
+}
+
 if (failures.length) { console.error(failures.map((item) => `FAIL ${item}`).join("\n")); process.exit(1); }
 console.log(`PASS ${htmlFiles.length} HTML pages checked; ${titles.size} unique titles; ${canonicals.size} unique canonicals; internal links, today's metadata/schema/integrations, official sources, editorial images, RSS, sitemap and topic discovery verified.`);

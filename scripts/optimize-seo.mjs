@@ -136,6 +136,9 @@ function titleFromFile(rel) {
 function topicFor(rel, category, title) {
   const hay = `${rel} ${category} ${title}`.toLowerCase();
   if (rel === "essays/self-model-is-not-a-fake-self.html") return topicDefs[0];
+  if (rel === "essays/preference-is-not-a-value.html") return topicDefs[2];
+  if (rel === "guides/how-to-write-an-ai-decision-record.html") return topicDefs[1];
+  if (rel === "guides/paper-shredders-strip-cross-micro-cut.html") return topicDefs[3];
   if (rel === "guides/reversibility-test-for-decisions.html") return topicDefs[2];
   if (rel === "guides/how-to-run-a-one-person-experiment.html" || rel === "guides/e-readers-kindle-kobo-boox-library.html") return topicDefs[2];
   if (/privacy|security|password|browser|dns|cloud-storage|data-minimization|threat-model/.test(hay)) return topicDefs[3];
