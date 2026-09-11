@@ -57,6 +57,7 @@ jobs:
           node scripts/publish-daily-2026-09-08.mjs _site
           node scripts/publish-daily-2026-09-09.mjs _site
           node scripts/publish-daily-2026-09-10.mjs _site
+          node scripts/publish-daily-2026-09-11.mjs _site
       - name: Apply durable SEO, trust and discovery layer
         run: |
           cp assets/style.css _site/assets/style.css
@@ -94,6 +95,7 @@ jobs:
         run: |
           node scripts/audit-daily-publication.mjs _site
           node scripts/audit-daily-2026-09-10.mjs _site
+          node scripts/audit-daily-2026-09-11.mjs _site
       - name: Install generated publication into main
         run: |
           cp -a _site/. .
