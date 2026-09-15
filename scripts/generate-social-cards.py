@@ -134,14 +134,36 @@ def save_webp(image: Image.Image, destination: Path) -> None:
 
 
 html_files = sorted(file for file in ROOT.rglob("*.html") if file.name != "404.html")
+generated_cards: list[tuple[str, str, tuple[int, int], Path]] = []
+
+
+def generate_card(title: str, category: str, size: tuple[int, int], destination: Path) -> None:
+    save_webp(card(title, category, size), destination)
+    generated_cards.append((title, category, size, destination))
+
+
 for file in html_files:
     stem, title, category = page_info(file)
-    save_webp(card(title, category, (1200, 630)), OUT / f"{stem}-social.webp")
+    generate_card(title, category, (1200, 630), OUT / f"{stem}-social.webp")
     rel = file.relative_to(ROOT).as_posix()
     if rel.startswith(("essays/", "guides/")):
-        save_webp(card(title, category, (1200, 675)), OUT / f"{stem}-16x9.webp")
-        save_webp(card(title, category, (1200, 900)), OUT / f"{stem}-4x3.webp")
-        save_webp(card(title, category, (1200, 1200)), OUT / f"{stem}-1x1.webp")
+        generate_card(title, category, (1200, 675), OUT / f"{stem}-16x9.webp")
+        generate_card(title, category, (1200, 900), OUT / f"{stem}-4x3.webp")
+        generate_card(title, category, (1200, 1200), OUT / f"{stem}-1x1.webp")
+
+# Some archive bundles contain hard-linked image entries. Verify the final
+# filesystem state after every destination has been visited, then regenerate
+# only anything that did not survive as a valid WebP.
+for title, category, size, destination in generated_cards:
+    valid = destination.exists() and destination.stat().st_size >= 1024
+    if valid:
+        try:
+            with Image.open(destination) as candidate:
+                candidate.verify()
+        except (OSError, SyntaxError):
+            valid = False
+    if not valid:
+        save_webp(card(title, category, size), destination)
 
 logo = Image.new("RGB", (512, 512), (8, 10, 15))
 logo_draw = ImageDraw.Draw(logo, "RGBA")

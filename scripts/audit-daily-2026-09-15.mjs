@@ -3,14 +3,14 @@ import { dirname, join, relative, resolve } from "node:path";
 
 const root = resolve(process.argv[2] || "."), failures = [], htmlFiles = [];
 const today = [
-  "essays/observer-effect-does-not-mean-consciousness-creates-reality.html",
-  "guides/how-to-build-an-ai-evidence-ledger.html",
-  "guides/usb-c-hub-vs-thunderbolt-dock-vs-monitor-dock.html"
+  "essays/forecast-is-not-a-future.html",
+  "guides/how-to-audit-an-ai-workflow-before-automation.html",
+  "guides/smart-home-hubs-matter-controller-thread-border-router-bridge.html"
 ];
 const assets = [
-  "/assets/visuals/quantum-observer-effect-editorial.webp",
-  "/assets/visuals/ai-evidence-ledger-editorial.webp",
-  "/assets/visuals/usb-c-hub-dock-editorial.webp"
+  "/assets/visuals/forecast-is-not-future-editorial.webp",
+  "/assets/visuals/ai-workflow-audit-editorial.webp",
+  "/assets/visuals/matter-controller-thread-router-bridge-editorial.webp"
 ];
 
 function walk(dir) {
@@ -98,17 +98,17 @@ for (const rel of today) {
 }
 for (const asset of assets) if (!credits.includes(asset)) fail(`image credits: missing ${asset}`);
 
-for (const host of ["aps.org", "stanford.edu", "openstax.org"]) if (!readFileSync(join(root, today[0]), "utf8").includes(host)) fail(`${today[0]}: missing authoritative ${host} source`);
-for (const host of ["nist.gov", "w3.org"]) if (!readFileSync(join(root, today[1]), "utf8").includes(host)) fail(`${today[1]}: missing authoritative ${host} source`);
-for (const host of ["usb.org", "intel.com", "microsoft.com"]) if (!readFileSync(join(root, today[2]), "utf8").includes(host)) fail(`${today[2]}: missing official ${host} source`);
+for (const host of ["ncei.noaa.gov", "ecmwf.int", "weather.gov", "ipcc.ch"]) if (!readFileSync(join(root, today[0]), "utf8").includes(host)) fail(`${today[0]}: missing authoritative ${host} source`);
+for (const host of ["nist.gov", "airc.nist.gov"]) if (!readFileSync(join(root, today[1]), "utf8").includes(host)) fail(`${today[1]}: missing authoritative ${host} source`);
+for (const host of ["csa-iot.org", "developers.home.google.com", "support.apple.com", "threadgroup.org"]) if (!readFileSync(join(root, today[2]), "utf8").includes(host)) fail(`${today[2]}: missing official ${host} source`);
 if (!/Commercial disclosure[\s\S]*direct, non-affiliate references/i.test(readFileSync(join(root, today[2]), "utf8"))) fail(`${today[2]}: missing clear non-affiliate disclosure`);
 
 if (!/<lastBuildDate>Tue, 15 Sep 2026/.test(feed)) fail("feed: stale lastBuildDate");
 const sitemapUrls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
 if (sitemapUrls.length !== new Set(sitemapUrls).size) fail("sitemap: duplicate URLs");
-for (const [topic, rel] of [["topics/simulation-theory.html", today[0]], ["topics/ai-knowledge.html", today[1]], ["topics/privacy-security.html", today[2]]]) if (!readFileSync(join(root, topic), "utf8").includes(`/${rel}`)) fail(`${topic}: missing today's curated link ${rel}`);
+for (const [topic, rel] of [["topics/ai-knowledge.html", today[0]], ["topics/ai-knowledge.html", today[1]], ["topics/privacy-security.html", today[2]]]) if (!readFileSync(join(root, topic), "utf8").includes(`/${rel}`)) fail(`${topic}: missing today's curated link ${rel}`);
 
-for (const [rel, expectedTopic] of [[today[0], "/topics/simulation-theory.html"], [today[1], "/topics/ai-knowledge.html"], [today[2], "/topics/privacy-security.html"]]) {
+for (const [rel, expectedTopic] of [[today[0], "/topics/ai-knowledge.html"], [today[1], "/topics/ai-knowledge.html"], [today[2], "/topics/privacy-security.html"]]) {
   const html = readFileSync(join(root, rel), "utf8");
   if (!html.includes(`<aside class="topic-trail"><span>CONTINUE BY TOPIC</span><a href="${expectedTopic}">`)) fail(`${rel}: incorrect topic trail; expected ${expectedTopic}`);
 }
