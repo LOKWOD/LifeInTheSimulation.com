@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-16",
+  "generated": "2026-09-17",
   "assets": [
     {
       "path": "/assets/visuals/dream-evidence-filter.svg",
@@ -327,6 +327,24 @@
     },
     {
       "path": "/assets/visuals/moca-powerline-mesh-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original AI-assisted editorial photograph generated specifically for this page",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/intelligence-not-consciousness-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original AI-assisted editorial photograph generated specifically for this page",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/learn-ai-roadmap-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original AI-assisted editorial photograph generated specifically for this page",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/kvm-usb-switch-dock-editorial.webp",
       "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
       "source": "Original AI-assisted editorial photograph generated specifically for this page",
       "license": "Copyright Life in the Simulation"
