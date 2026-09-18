@@ -28,6 +28,7 @@ Editorial policy: https://lifeinthesimulation.com/editorial-policy.html
 
 ## Essays
 
+- [A System Is Not Resilient Because It Has Never Failed](https://lifeinthesimulation.com/essays/a-system-is-not-resilient-because-it-has-never-failed.html)
 - [A Model Can Be Right for the Wrong Reason](https://lifeinthesimulation.com/essays/ai-accuracy-is-not-understanding.html)
 - [When the Internet Is Full of AI Agents](https://lifeinthesimulation.com/essays/ai-agents-and-the-internet-of-strangers.html)
 - [AI and the End of Knowing Who Made What](https://lifeinthesimulation.com/essays/ai-and-the-end-of-knowing.html)
@@ -87,6 +88,7 @@ Editorial policy: https://lifeinthesimulation.com/editorial-policy.html
 - [Encrypted Cloud Storage Without the Hype: Proton Drive vs Tresorit vs Cryptomator](https://lifeinthesimulation.com/guides/encrypted-cloud-storage-proton-tresorit-cryptomator.html)
 - [External SSD vs Hard Drive vs NAS: A Backup Guide Without the Hype](https://lifeinthesimulation.com/guides/external-ssd-vs-hard-drive-vs-nas-backup.html)
 - [Hardware Security Keys Without the Hype: Yubico vs Google Titan—and the No-Buy Option](https://lifeinthesimulation.com/guides/hardware-security-keys-without-the-hype.html)
+- [Home Document Safes Without the Hype: Fire Ratings, Water Claims, and the Grab-and-Go Alternative](https://lifeinthesimulation.com/guides/home-document-safes-fire-water-grab-go.html)
 - [Home Networking Without New Ethernet: MoCA vs Powerline vs Wireless Mesh](https://lifeinthesimulation.com/guides/home-networking-moca-vs-powerline-vs-mesh.html)
 - [Home Wi-Fi Without the Hype: Router vs Mesh vs Access Points](https://lifeinthesimulation.com/guides/home-wifi-router-vs-mesh-vs-access-points.html)
 - [How to Audit an AI Workflow Before You Automate It](https://lifeinthesimulation.com/guides/how-to-audit-an-ai-workflow-before-automation.html)
@@ -108,6 +110,7 @@ Editorial policy: https://lifeinthesimulation.com/editorial-policy.html
 - [Password Managers Without the Hype: Bitwarden vs 1Password vs Proton Pass vs KeePassXC](https://lifeinthesimulation.com/guides/password-managers-without-the-hype.html)
 - [Audit Your Personal Algorithm](https://lifeinthesimulation.com/guides/personal-algorithm-audit.html)
 - [Personal Data Minimization for Ordinary People](https://lifeinthesimulation.com/guides/personal-data-minimization.html)
+- [Build a Personal Digital Exit Plan Before a Service Disappears](https://lifeinthesimulation.com/guides/personal-digital-exit-plan.html)
 - [Build a Personal Information Diet](https://lifeinthesimulation.com/guides/personal-information-diet.html)
 - [Personal Threat Modeling for Ordinary People](https://lifeinthesimulation.com/guides/personal-threat-modeling-for-ordinary-people.html)
 - [Private DNS Without the Hype: Quad9 vs Cloudflare vs NextDNS](https://lifeinthesimulation.com/guides/private-dns-quad9-cloudflare-nextdns.html)
