@@ -115,6 +115,10 @@ const topicDefs = [
   { slug: "privacy-security", name: "Privacy, Security & Digital Boundaries", dek: "Practical, threat-model-based guidance for reducing exposure, protecting accounts and choosing tools without fear-based marketing.", links: ["essays/a-system-is-not-resilient-because-it-has-never-failed.html", "guides/personal-digital-exit-plan.html", "guides/home-document-safes-fire-water-grab-go.html", "guides/personal-threat-modeling-for-ordinary-people.html", "guides/personal-data-minimization.html", "guides/password-managers-without-the-hype.html", "guides/hardware-security-keys-without-the-hype.html", "guides/private-web-browsers-firefox-brave-safari.html", "guides/encrypted-cloud-storage-proton-tresorit-cryptomator.html", "guides/private-dns-quad9-cloudflare-nextdns.html", "guides/private-email-proton-tuta-fastmail.html", "guides/paper-shredders-strip-cross-micro-cut.html", "guides/home-wifi-router-vs-mesh-vs-access-points.html", "guides/home-networking-moca-vs-powerline-vs-mesh.html", "guides/ups-battery-backup-standby-line-interactive-online.html", "guides/usb-c-hub-vs-thunderbolt-dock-vs-monitor-dock.html", "guides/kvm-switch-vs-usb-switch-vs-dock.html", "guides/smart-home-hubs-matter-controller-thread-border-router-bridge.html"] }
 ];
 
+topicDefs.find((topic) => topic.slug === "simulation-theory").links.unshift("essays/brain-scan-is-not-a-thought.html");
+topicDefs.find((topic) => topic.slug === "ai-knowledge").links.unshift("guides/how-to-separate-claim-evidence-inference.html");
+topicDefs.find((topic) => topic.slug === "privacy-security").links.unshift("guides/usb-c-cables-charge-data-video.html");
+
 function esc(value) { return String(value).replaceAll("&", "&amp;").replaceAll('"', "&quot;").replaceAll("<", "&lt;").replaceAll(">", "&gt;"); }
 function textOnly(value) { return value.replace(/<[^>]+>/g, " ").replace(/&(?:amp|#38);/g, "&").replace(/&(?:quot|#34);/g, '"').replace(/\s+/g, " ").trim(); }
 function pageUrl(rel) { return rel === "index.html" ? `${SITE}/` : `${SITE}/${rel}`; }

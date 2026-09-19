@@ -25,3 +25,13 @@
 - Deliberately ignored: the one-click RSS result at position 126 and one-to-five-impression query fragments. They are too sparse or irrelevant to redirect the editorial portfolio.
 - Authority action: published a reusable exit-readiness matrix and a restoration-evidence framework; added reciprocal contextual links from established backup, UPS, data-minimization and paper-security pages into the new cluster.
 - Outreach: none sent or logged. No sufficiently specific, honest outreach target was stronger than improving the on-site primary-source asset and cluster.
+
+# 2026-09-19 — measurement, inference and USB-C capability
+
+- Report used: generated 2026-09-16; Search Console window 2026-08-17 through 2026-09-13.
+- Site signal: 332 impressions, 2 clicks and 0.6% CTR overall. The AI-books guide remained the only substantial page signal at 71 impressions, 1 click and average position 46.8.
+- Decision: position 46.8 is too weak to support another AI-learning page, especially after the September 17 roadmap. The signal informed reciprocal evidence-literacy links, while the published pages expand into distinct neuroscience-measurement, reasoning-protocol and USB-C compatibility intents.
+- Deliberately ignored: queries with one to five impressions, the isolated RSS result and the zero-indexed sitemap row. None is stable or relevant enough to redirect the portfolio.
+- Portfolio balance: two authority-expansion pages—one rigorous measurement essay and one reusable inference worksheet—and one exploratory, commercially useful USB-C cable guide. No page is labeled data-led because the available signal does not support that claim.
+- Authority action: published a citation-ready brain-image reading card and a one-page claim–evidence–inference worksheet; added reciprocal contextual links from established measurement, scientific-reading, AI-verification, dock and KVM pages.
+- Outreach: none sent or logged. The new primary-source assets and strengthened on-site cluster are higher-confidence authority work than speculative pitching.
