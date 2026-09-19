@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-18",
+  "generated": "2026-09-19",
   "assets": [
     {
       "path": "/assets/visuals/dream-evidence-filter.svg",
@@ -363,6 +363,24 @@
     },
     {
       "path": "/assets/visuals/home-document-safe-options-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original AI-assisted conceptual editorial photograph generated specifically for this page; not documentary or product-test imagery",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/brain-scan-measurement-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original AI-assisted conceptual editorial photograph generated specifically for this page; not documentary or product-test imagery",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/claim-evidence-inference-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original AI-assisted conceptual editorial photograph generated specifically for this page; not documentary or product-test imagery",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/usb-c-cable-capabilities-editorial.webp",
       "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
       "source": "Original AI-assisted conceptual editorial photograph generated specifically for this page; not documentary or product-test imagery",
       "license": "Copyright Life in the Simulation"
