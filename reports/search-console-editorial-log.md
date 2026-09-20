@@ -35,3 +35,13 @@
 - Portfolio balance: two authority-expansion pages—one rigorous measurement essay and one reusable inference worksheet—and one exploratory, commercially useful USB-C cable guide. No page is labeled data-led because the available signal does not support that claim.
 - Authority action: published a citation-ready brain-image reading card and a one-page claim–evidence–inference worksheet; added reciprocal contextual links from established measurement, scientific-reading, AI-verification, dock and KVM pages.
 - Outreach: none sent or logged. The new primary-source assets and strengthened on-site cluster are higher-confidence authority work than speculative pitching.
+
+# 2026-09-20 — provenance, notification routing and voice capture
+
+- Report used: generated 2026-09-16; Search Console window 2026-08-17 through 2026-09-13.
+- Site signal: 332 impressions, 2 clicks and 0.6% CTR overall. The AI-books guide remained the only substantial page signal at 71 impressions, 1 click and average position 46.8.
+- Decision: the AI-books signal is too far from positions 4–20 and too close to recent AI-learning coverage to justify another variant. Today's work reinforces evidence literacy through a distinct citation-provenance essay, then deliberately expands into attention systems and practical recording technology.
+- Deliberately ignored: one-to-five-impression query fragments, the isolated RSS result and the zero-indexed sitemap row. They are too weak, irrelevant or inconsistent with observed impressions to redirect the portfolio.
+- Portfolio balance: two authority-expansion assets—the source-provenance map and notification escalation ladder—and one exploratory, commercially useful voice-recorder comparison. No page is labeled data-led because the report does not support that claim.
+- Authority action: published a citation-ready corroboration matrix and notification escalation worksheet; added reciprocal links from established research-reading, AI-citation, attention-reset, blocker, private-notes and digital-exit pages; expanded three topic paths.
+- Outreach: none sent or logged. The source-backed reusable assets and reciprocal cluster improvements are higher-confidence authority work than speculative outreach.

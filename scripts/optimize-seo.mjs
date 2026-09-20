@@ -71,6 +71,12 @@ const publicationDates = {
   ,"essays/a-system-is-not-resilient-because-it-has-never-failed.html": "2026-09-18"
   ,"guides/personal-digital-exit-plan.html": "2026-09-18"
   ,"guides/home-document-safes-fire-water-grab-go.html": "2026-09-18"
+  ,"essays/brain-scan-is-not-a-thought.html": "2026-09-19"
+  ,"guides/how-to-separate-claim-evidence-inference.html": "2026-09-19"
+  ,"guides/usb-c-cables-charge-data-video.html": "2026-09-19"
+  ,"essays/ten-links-can-still-be-one-source.html": "2026-09-20"
+  ,"guides/notification-escalation-ladder.html": "2026-09-20"
+  ,"guides/voice-recorders-dedicated-phone-usb-microphone.html": "2026-09-20"
 };
 
 const depth = {
@@ -118,6 +124,9 @@ const topicDefs = [
 topicDefs.find((topic) => topic.slug === "simulation-theory").links.unshift("essays/brain-scan-is-not-a-thought.html");
 topicDefs.find((topic) => topic.slug === "ai-knowledge").links.unshift("guides/how-to-separate-claim-evidence-inference.html");
 topicDefs.find((topic) => topic.slug === "privacy-security").links.unshift("guides/usb-c-cables-charge-data-video.html");
+topicDefs.find((topic) => topic.slug === "ai-knowledge").links.unshift("essays/ten-links-can-still-be-one-source.html");
+topicDefs.find((topic) => topic.slug === "attention-agency").links.unshift("guides/notification-escalation-ladder.html");
+topicDefs.find((topic) => topic.slug === "privacy-security").links.unshift("guides/voice-recorders-dedicated-phone-usb-microphone.html");
 
 function esc(value) { return String(value).replaceAll("&", "&amp;").replaceAll('"', "&quot;").replaceAll("<", "&lt;").replaceAll(">", "&gt;"); }
 function textOnly(value) { return value.replace(/<[^>]+>/g, " ").replace(/&(?:amp|#38);/g, "&").replace(/&(?:quot|#34);/g, '"').replace(/\s+/g, " ").trim(); }
@@ -179,6 +188,9 @@ function topicFor(rel, category, title) {
   if (rel === "essays/intelligence-is-not-consciousness.html" || rel === "guides/how-to-learn-ai-without-chasing-every-update.html") return topicDefs[1];
   if (rel === "guides/kvm-switch-vs-usb-switch-vs-dock.html") return topicDefs[3];
   if (rel === "essays/a-system-is-not-resilient-because-it-has-never-failed.html" || rel === "guides/personal-digital-exit-plan.html" || rel === "guides/home-document-safes-fire-water-grab-go.html") return topicDefs[3];
+  if (rel === "essays/ten-links-can-still-be-one-source.html") return topicDefs[1];
+  if (rel === "guides/notification-escalation-ladder.html") return topicDefs[2];
+  if (rel === "guides/voice-recorders-dedicated-phone-usb-microphone.html") return topicDefs[3];
   if (rel === "guides/reversibility-test-for-decisions.html") return topicDefs[2];
   if (rel === "guides/how-to-run-a-one-person-experiment.html" || rel === "guides/e-readers-kindle-kobo-boox-library.html") return topicDefs[2];
   if (/privacy|security|password|browser|dns|cloud-storage|data-minimization|threat-model/.test(hay)) return topicDefs[3];
