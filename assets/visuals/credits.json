@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-19",
+  "generated": "2026-09-20",
   "assets": [
     {
       "path": "/assets/visuals/dream-evidence-filter.svg",
@@ -381,6 +381,24 @@
     },
     {
       "path": "/assets/visuals/usb-c-cable-capabilities-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original AI-assisted conceptual editorial photograph generated specifically for this page; not documentary or product-test imagery",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/citation-cascade-single-source-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original AI-assisted conceptual editorial photograph generated specifically for this page; not documentary or product-test imagery",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/notification-escalation-ladder-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original AI-assisted conceptual editorial photograph generated specifically for this page; not documentary or product-test imagery",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/voice-recording-paths-editorial.webp",
       "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
       "source": "Original AI-assisted conceptual editorial photograph generated specifically for this page; not documentary or product-test imagery",
       "license": "Copyright Life in the Simulation"
