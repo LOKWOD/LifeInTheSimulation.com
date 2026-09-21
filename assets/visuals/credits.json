@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-20",
+  "generated": "2026-09-21",
   "assets": [
     {
       "path": "/assets/visuals/dream-evidence-filter.svg",
@@ -401,6 +401,24 @@
       "path": "/assets/visuals/voice-recording-paths-editorial.webp",
       "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
       "source": "Original AI-assisted conceptual editorial photograph generated specifically for this page; not documentary or product-test imagery",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/detection-limits-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original AI-assisted conceptual editorial photograph generated specifically for this page; not documentary, diagnostic, surveillance or product-test imagery",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/personal-dependency-map-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original AI-assisted conceptual editorial photograph generated specifically for this page; not documentary, diagnostic, surveillance or product-test imagery",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/home-security-camera-storage-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original AI-assisted conceptual editorial photograph generated specifically for this page; not documentary, diagnostic, surveillance or product-test imagery",
       "license": "Copyright Life in the Simulation"
     }
   ]
