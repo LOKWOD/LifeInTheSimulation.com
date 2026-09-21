@@ -77,6 +77,9 @@ const publicationDates = {
   ,"essays/ten-links-can-still-be-one-source.html": "2026-09-20"
   ,"guides/notification-escalation-ladder.html": "2026-09-20"
   ,"guides/voice-recorders-dedicated-phone-usb-microphone.html": "2026-09-20"
+  ,"essays/not-detected-is-not-not-present.html": "2026-09-21"
+  ,"guides/personal-dependency-map.html": "2026-09-21"
+  ,"guides/home-security-cameras-local-cloud-hybrid.html": "2026-09-21"
 };
 
 const depth = {
@@ -127,6 +130,8 @@ topicDefs.find((topic) => topic.slug === "privacy-security").links.unshift("guid
 topicDefs.find((topic) => topic.slug === "ai-knowledge").links.unshift("essays/ten-links-can-still-be-one-source.html");
 topicDefs.find((topic) => topic.slug === "attention-agency").links.unshift("guides/notification-escalation-ladder.html");
 topicDefs.find((topic) => topic.slug === "privacy-security").links.unshift("guides/voice-recorders-dedicated-phone-usb-microphone.html");
+topicDefs.find((topic) => topic.slug === "simulation-theory").links.unshift("essays/not-detected-is-not-not-present.html");
+topicDefs.find((topic) => topic.slug === "privacy-security").links.unshift("guides/personal-dependency-map.html", "guides/home-security-cameras-local-cloud-hybrid.html");
 
 function esc(value) { return String(value).replaceAll("&", "&amp;").replaceAll('"', "&quot;").replaceAll("<", "&lt;").replaceAll(">", "&gt;"); }
 function textOnly(value) { return value.replace(/<[^>]+>/g, " ").replace(/&(?:amp|#38);/g, "&").replace(/&(?:quot|#34);/g, '"').replace(/\s+/g, " ").trim(); }
@@ -191,6 +196,8 @@ function topicFor(rel, category, title) {
   if (rel === "essays/ten-links-can-still-be-one-source.html") return topicDefs[1];
   if (rel === "guides/notification-escalation-ladder.html") return topicDefs[2];
   if (rel === "guides/voice-recorders-dedicated-phone-usb-microphone.html") return topicDefs[3];
+  if (rel === "essays/not-detected-is-not-not-present.html") return topicDefs[0];
+  if (rel === "guides/personal-dependency-map.html" || rel === "guides/home-security-cameras-local-cloud-hybrid.html") return topicDefs[3];
   if (rel === "guides/reversibility-test-for-decisions.html") return topicDefs[2];
   if (rel === "guides/how-to-run-a-one-person-experiment.html" || rel === "guides/e-readers-kindle-kobo-boox-library.html") return topicDefs[2];
   if (/privacy|security|password|browser|dns|cloud-storage|data-minimization|threat-model/.test(hay)) return topicDefs[3];

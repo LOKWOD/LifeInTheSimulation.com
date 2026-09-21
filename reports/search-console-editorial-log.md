@@ -45,3 +45,13 @@
 - Portfolio balance: two authority-expansion assets—the source-provenance map and notification escalation ladder—and one exploratory, commercially useful voice-recorder comparison. No page is labeled data-led because the report does not support that claim.
 - Authority action: published a citation-ready corroboration matrix and notification escalation worksheet; added reciprocal links from established research-reading, AI-citation, attention-reset, blocker, private-notes and digital-exit pages; expanded three topic paths.
 - Outreach: none sent or logged. The source-backed reusable assets and reciprocal cluster improvements are higher-confidence authority work than speculative outreach.
+
+# 2026-09-21 — detection boundaries, dependency mapping and camera storage
+
+- Report used: generated 2026-09-16; Search Console window 2026-08-17 through 2026-09-13. At five days old, the report is current enough to inform the batch.
+- Site signal: the AI-books guide remains the only material page signal at 71 impressions, 1 click, 1.4% CTR and average position 46.8. Position 46.8 is not an opportunity in the requested 4–20 range, and another AI variant would crowd the September 17 and September 20 coverage.
+- Decision: publish no data-led page this run. Expand the evidence cluster with a detection-limit essay, create an operational dependency-mapping guide, and explore a distinct commercial home-camera storage intent.
+- Deliberately ignored: query fragments with one to five impressions, the nine-impression dreams query at position 58.1, the one-click RSS result at position 126 and the zero-indexed sitemap row. These samples are too weak, poorly ranked or inconsistent with observed impressions.
+- Portfolio balance: two Authority-expansion pages and one Exploration page. The pages differ in intent, format and primary problem: interpreting negative evidence, mapping cascading dependencies, and choosing a camera-storage architecture.
+- Authority action: published a reusable negative-result interpretation matrix, a seven-layer dependency worksheet, a four-path camera-storage decision matrix and six reciprocal contextual links. These strengthen Measurement & Evidence and Privacy & Security without manufacturing outreach.
+- Outreach: none sent or logged; no target was specific enough to beat the value of the primary-source assets and internal cluster improvements.
