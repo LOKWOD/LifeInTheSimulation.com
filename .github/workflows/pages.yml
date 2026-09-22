@@ -74,6 +74,7 @@ jobs:
           python -m pip install --disable-pip-version-check --quiet Pillow==11.3.0
           python scripts/generate-social-cards.py _site
           node scripts/optimize-seo.mjs _site
+          node scripts/apply-brand.mjs _site
       - name: Normalize and verify Cloudflare Web Analytics
         shell: python
         run: |

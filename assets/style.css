@@ -786,3 +786,20 @@ html[data-theme="light"] .archive-tools{background:rgba(241,240,235,.92)}
 @media(prefers-reduced-motion:reduce){
   *{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
 }
+
+/* Brand artwork supplied September 2026. The icon is framed from the original board. */
+.brand-mark{
+  border:0;border-radius:8px;
+  background-image:url('/assets/life-in-the-simulation-brand-board.png');
+  background-repeat:no-repeat;background-size:550px 413px;
+  background-position:-148px -141px;
+}
+.brand-mark i,.brand-mark b{display:none}
+html[data-theme="light"] .brand-mark{box-shadow:0 0 0 1px rgba(18,25,37,.18)}
+.home-brand-signature{
+  width:min(100%,525px);height:152px;margin:0 0 18px;
+  background:url('/assets/life-in-the-simulation-brand-board.png') no-repeat -29px -65px / 1043px 782px;
+}
+@media(max-width:560px){
+  .home-brand-signature{width:320px;height:95px;background-size:636px 477px;background-position:-18px -40px;margin-bottom:24px}
+}
