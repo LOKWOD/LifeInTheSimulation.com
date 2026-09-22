@@ -1,5 +1,15 @@
 # Search Console editorial log
 
+# 2026-09-22 — delay, assumption testing and item-finding systems
+
+- Report used: generated 2026-09-16; Search Console window 2026-08-17 through 2026-09-13. At six days old, the report is current enough to inform the batch.
+- Site signal: the AI-books guide remains the only material page signal at 71 impressions, 1 click, 1.4% CTR and average position 46.8. It is far outside the requested positions 4–20 and has already received distinct supporting coverage.
+- Decision: publish no data-led page. Strengthen systems thinking with a rigorous delay essay, turn hidden premises into a maintained assumption-register protocol, and explore the distinct commercial intent around Bluetooth item-tracker ecosystems.
+- Deliberately ignored: one-to-five-impression query fragments, the nine-impression dreams query at position 58.1, the one-click RSS result at position 126 and the zero-indexed sitemap row. These are too sparse, poorly ranked or inconsistent with observed impressions to justify another close variant.
+- Portfolio balance: two Authority-expansion pages and one Exploration page. The pages answer different questions through an essay, an actionable planning worksheet and a compatibility-first technology guide.
+- Authority action: published an end-to-end delay audit, an eight-field assumption register and an item-tracker ecosystem fit card; added six reciprocal contextual links across the systems, decision-practice and privacy clusters.
+- Outreach: none sent or logged. The source-backed reference assets and reciprocal crawl paths are more useful and defensible than speculative pitching.
+
 ## 2026-09-17 decision
 
 - Report generated: 2026-09-16
