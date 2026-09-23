@@ -70,6 +70,7 @@ jobs:
       - name: Apply durable SEO, trust and discovery layer
         run: |
           cp assets/style.css _site/assets/style.css
+          cp assets/favicon.svg _site/assets/favicon.svg
           node scripts/optimize-seo.mjs _site
           python -m pip install --disable-pip-version-check --quiet Pillow==11.3.0
           python scripts/generate-social-cards.py _site
