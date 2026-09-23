@@ -1,0 +1,11 @@
+/* TEAM */
+Editorial and design: Life in the Simulation
+
+/* SITE */
+Launched: 2026
+Language: English
+Built with: semantic HTML, modern CSS, vanilla JavaScript
+Hosted on: GitHub Pages
+Analytics: none
+Frameworks: none
+Mission: Question the defaults. Protect your attention. Live deliberately.

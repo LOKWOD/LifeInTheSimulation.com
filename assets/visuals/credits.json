@@ -1,0 +1,443 @@
+{
+  "generated": "2026-09-22",
+  "assets": [
+    {
+      "path": "/assets/visuals/dream-evidence-filter.svg",
+      "creator": "Life in the Simulation Editorial Desk",
+      "source": "Original editorial illustration",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/eink-tablet-choice-map.svg",
+      "creator": "Life in the Simulation Editorial Desk",
+      "source": "Original editorial illustration",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/understanding-calibration-loop.svg",
+      "creator": "Life in the Simulation Editorial Desk",
+      "source": "Original editorial illustration",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/password-manager-choice-map.svg",
+      "creator": "Life in the Simulation Editorial Desk",
+      "source": "Original editorial illustration",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/memory-reconstruction-path.svg",
+      "creator": "Life in the Simulation Editorial Desk",
+      "source": "Original editorial illustration",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/security-key-rollout-map.svg",
+      "creator": "Life in the Simulation Editorial Desk",
+      "source": "Original editorial illustration",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/free-will-claim-map.svg",
+      "creator": "Life in the Simulation Editorial Desk",
+      "source": "Original editorial illustration",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/private-notes-custody-map.svg",
+      "creator": "Life in the Simulation Editorial Desk",
+      "source": "Original editorial illustration",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/predictive-perception-constraint-loop.svg",
+      "creator": "Life in the Simulation Editorial Desk",
+      "source": "Original editorial illustration",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/website-blocker-choice-map.svg",
+      "creator": "Life in the Simulation Editorial Desk",
+      "source": "Original editorial illustration",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/emergence-explanation-ladder.svg",
+      "creator": "Life in the Simulation Editorial Desk",
+      "source": "Original editorial illustration",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/rss-reader-choice-map.svg",
+      "creator": "Life in the Simulation Editorial Desk",
+      "source": "Original editorial illustration",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/ai-memory-control-layers.svg",
+      "creator": "Life in the Simulation Editorial Desk",
+      "source": "Original editorial illustration",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/confidence-calibration-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original editorial illustration generated for this page",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/privacy-browser-paths-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original editorial illustration generated for this page",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/local-ai-closed-loop-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original editorial illustration generated for this page",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/automation-responsibility-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original editorial photographic image generated for this page",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/encrypted-cloud-storage-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original editorial photographic image generated for this page",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/focus-headphones-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original editorial photographic image generated for this page",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/digital-twin-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original editorial photographic image generated for this page",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/private-dns-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original editorial photographic image generated for this page",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/minimalist-phone-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original editorial photographic image generated for this page",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/defaults-choice-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original editorial photographic image generated for this page",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/personal-threat-model-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original editorial photographic image generated for this page",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/paper-planning-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original editorial photographic image generated for this page",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/uncertainty-information-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original editorial photographic image generated for this page",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/read-scientific-paper-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original editorial photographic image generated for this page",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/document-scanners-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original editorial photographic image generated for this page",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/ai-benchmark-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original editorial photographic image generated for this page",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/verify-ai-citation-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original editorial photographic image generated for this page",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/backup-storage-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original editorial photographic image generated for this page",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/self-model-reality-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original AI-assisted editorial photograph generated specifically for this page",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/reversibility-test-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original AI-assisted editorial photograph generated specifically for this page",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/private-email-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original AI-assisted editorial photograph generated specifically for this page",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/ai-explanation-mechanism-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original AI-assisted editorial photograph generated specifically for this page",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/one-person-experiment-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original AI-assisted editorial photograph generated specifically for this page",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/e-reader-ecosystems-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original AI-assisted editorial photograph generated specifically for this page",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/preference-is-not-value-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original AI-assisted editorial photograph generated specifically for this page",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/ai-decision-record-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original AI-assisted editorial photograph generated specifically for this page",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/paper-shredder-choice-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original AI-assisted editorial photograph generated specifically for this page",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/counterfactual-reasoning-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original AI-assisted editorial photograph generated specifically for this page",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/compare-ai-answers-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original AI-assisted editorial photograph generated specifically for this page",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/home-wifi-architecture-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original AI-assisted editorial photograph generated specifically for this page",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/dataset-is-not-world-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original AI-assisted editorial photograph generated specifically for this page",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/premortem-planning-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original AI-assisted editorial photograph generated specifically for this page",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/ups-battery-backup-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original AI-assisted editorial photograph generated specifically for this page",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/quantum-observer-effect-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original AI-assisted editorial photograph generated specifically for this page",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/ai-evidence-ledger-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original AI-assisted editorial photograph generated specifically for this page",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/usb-c-hub-dock-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original AI-assisted editorial photograph generated specifically for this page",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/forecast-is-not-future-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original AI-assisted editorial photograph generated specifically for this page",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/ai-workflow-audit-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original AI-assisted editorial photograph generated specifically for this page",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/matter-controller-thread-router-bridge-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original AI-assisted editorial photograph generated specifically for this page",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/mind-upload-copy-identity-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original AI-assisted editorial photograph generated specifically for this page",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/stop-rule-decision-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original AI-assisted editorial photograph generated specifically for this page",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/moca-powerline-mesh-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original AI-assisted editorial photograph generated specifically for this page",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/intelligence-not-consciousness-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original AI-assisted editorial photograph generated specifically for this page",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/learn-ai-roadmap-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original AI-assisted editorial photograph generated specifically for this page",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/kvm-usb-switch-dock-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original AI-assisted editorial photograph generated specifically for this page",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/system-resilience-recovery-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original AI-assisted conceptual editorial photograph generated specifically for this page; not documentary or product-test imagery",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/personal-digital-exit-plan-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original AI-assisted conceptual editorial photograph generated specifically for this page; not documentary or product-test imagery",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/home-document-safe-options-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original AI-assisted conceptual editorial photograph generated specifically for this page; not documentary or product-test imagery",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/brain-scan-measurement-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original AI-assisted conceptual editorial photograph generated specifically for this page; not documentary or product-test imagery",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/claim-evidence-inference-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original AI-assisted conceptual editorial photograph generated specifically for this page; not documentary or product-test imagery",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/usb-c-cable-capabilities-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original AI-assisted conceptual editorial photograph generated specifically for this page; not documentary or product-test imagery",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/citation-cascade-single-source-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original AI-assisted conceptual editorial photograph generated specifically for this page; not documentary or product-test imagery",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/notification-escalation-ladder-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original AI-assisted conceptual editorial photograph generated specifically for this page; not documentary or product-test imagery",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/voice-recording-paths-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original AI-assisted conceptual editorial photograph generated specifically for this page; not documentary or product-test imagery",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/detection-limits-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original AI-assisted conceptual editorial photograph generated specifically for this page; not documentary, diagnostic, surveillance or product-test imagery",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/personal-dependency-map-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original AI-assisted conceptual editorial photograph generated specifically for this page; not documentary, diagnostic, surveillance or product-test imagery",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/home-security-camera-storage-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original AI-assisted conceptual editorial photograph generated specifically for this page; not documentary, diagnostic, surveillance or product-test imagery",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/system-waiting-time-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original AI-assisted conceptual editorial photograph generated specifically for this page; not documentary, operational, product or hands-on test imagery",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/assumption-register-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original AI-assisted conceptual editorial photograph generated specifically for this page; not documentary, operational, product or hands-on test imagery",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/bluetooth-tracker-systems-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original AI-assisted conceptual editorial photograph generated specifically for this page; not documentary, operational, product or hands-on test imagery",
+      "license": "Copyright Life in the Simulation"
+    }
+  ]
+}

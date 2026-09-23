@@ -1,0 +1,16 @@
+{
+  "name": "Life in the Simulation",
+  "short_name": "L//S",
+  "description": "Essays, field guides and thought experiments about simulation theory, consciousness, artificial intelligence, attention and living deliberately in a mediated world.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#080a0f",
+  "theme_color": "#080a0f",
+  "icons": [
+    {
+      "src": "/assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

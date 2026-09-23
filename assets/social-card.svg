@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<defs>
+  <radialGradient id="a" cx="80%" cy="10%" r="65%"><stop stop-color="#a997ff" stop-opacity=".22"/><stop offset="1" stop-color="#080a0f" stop-opacity="0"/></radialGradient>
+  <radialGradient id="b" cx="5%" cy="90%" r="55%"><stop stop-color="#8af4cb" stop-opacity=".16"/><stop offset="1" stop-color="#080a0f" stop-opacity="0"/></radialGradient>
+  <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#8af4cb" stroke-opacity=".045"/></pattern>
+</defs>
+<rect width="1200" height="630" fill="#080a0f"/>
+<rect width="1200" height="630" fill="url(#a)"/><rect width="1200" height="630" fill="url(#b)"/><rect width="1200" height="630" fill="url(#grid)"/>
+<rect x="28" y="28" width="1144" height="574" rx="24" fill="none" stroke="#303d4f" stroke-width="2"/>
+<text x="78" y="96" fill="#8af4cb" font-family="monospace" font-size="18" font-weight="700" letter-spacing="2">L//S  •  REALITY / AI / CONSCIOUSNESS</text>
+<text x="78" y="236" fill="#f2f5f7" font-family="Arial, sans-serif" font-size="76" font-weight="800" letter-spacing="-4">Life in the</text>
+<text x="78" y="326" fill="#f2f5f7" font-family="Arial, sans-serif" font-size="76" font-weight="800" letter-spacing="-4">Simulation</text>
+<text x="82" y="420" fill="#b1bcc9" font-family="Arial, sans-serif" font-size="27">Question the defaults. Protect your attention.</text>
+<text x="82" y="460" fill="#b1bcc9" font-family="Arial, sans-serif" font-size="27">Live deliberately.</text>
+<text x="82" y="548" fill="#707c8b" font-family="monospace" font-size="18" letter-spacing="2">LIFEINTHESIMULATION.COM</text>
+<circle cx="935" cy="315" r="122" fill="#0b1818" stroke="#8af4cb" stroke-opacity=".45" stroke-width="2"/>
+<ellipse cx="935" cy="315" rx="205" ry="72" fill="none" stroke="#8af4cb" stroke-opacity=".28" stroke-width="2" transform="rotate(-18 935 315)"/>
+<ellipse cx="935" cy="315" rx="190" ry="118" fill="none" stroke="#8af4cb" stroke-opacity=".18" stroke-width="2" transform="rotate(26 935 315)"/>
+<text x="935" y="322" text-anchor="middle" fill="#dcfff3" font-family="monospace" font-size="21" letter-spacing="2">YOU ARE HERE</text>
+</svg>
