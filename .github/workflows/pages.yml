@@ -71,6 +71,7 @@ jobs:
         run: |
           cp assets/style.css _site/assets/style.css
           cp assets/favicon.svg _site/assets/favicon.svg
+          cp assets/life-in-the-simulation-logo.webp _site/assets/life-in-the-simulation-logo.webp
           node scripts/optimize-seo.mjs _site
           python -m pip install --disable-pip-version-check --quiet Pillow==11.3.0
           python scripts/generate-social-cards.py _site
