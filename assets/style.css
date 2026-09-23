@@ -790,7 +790,7 @@ html[data-theme="light"] .archive-tools{background:rgba(241,240,235,.92)}
 /* Brand artwork supplied September 2026. The icon is framed from the original board. */
 .brand-mark{
   border:0;border-radius:8px;
-  background-image:url('/assets/life-in-the-simulation-brand-board.png');
+  background-image:url('/assets/life-in-the-simulation-brand-board.png?rev=20260923');
   background-repeat:no-repeat;background-size:550px 413px;
   background-position:-148px -141px;
 }
@@ -799,7 +799,7 @@ html[data-theme="light"] .brand-mark{box-shadow:0 0 0 1px rgba(18,25,37,.18)}
 /* The mark is framed from the supplied board; live type stays readable at any zoom. */
 .home-brand-signature{display:flex;align-items:center;gap:18px;max-width:100%;margin:0 0 32px}
 .home-brand-icon{display:block;flex:none;width:108px;height:108px;border-radius:18px;
-  background:#0e131c url('/assets/life-in-the-simulation-brand-board.png') no-repeat -266px -256px / 1014px 760px}
+  background:#0e131c url('/assets/life-in-the-simulation-brand-board.png?rev=20260923') no-repeat -266px -256px / 1014px 760px}
 .home-brand-words{display:flex;flex-direction:column;min-width:0;color:#f2f5f7;text-transform:uppercase}
 .home-brand-words>span{font-size:clamp(.8rem,1.8vw,1.25rem);font-weight:600;letter-spacing:.4em;line-height:1.2}
 .home-brand-words strong{font-size:clamp(1.6rem,4.1vw,3.1rem);font-weight:800;letter-spacing:.14em;line-height:1.08}
