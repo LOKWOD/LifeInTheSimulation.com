@@ -787,34 +787,107 @@ html[data-theme="light"] .archive-tools{background:rgba(241,240,235,.92)}
   *{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
 }
 
-/* Brand artwork supplied September 2026. The icon is framed from the original board. */
+/* Refined Life in the Simulation identity — restrained architectural glass. */
 .brand-mark{
-  border:0;border-radius:8px;
-  background-image:url('/assets/life-in-the-simulation-brand-board.png?rev=20260923');
-  background-repeat:no-repeat;background-size:425px 319px;
-  background-position:-111px -107px;
+  width:46px;height:46px;display:block;position:relative;flex:none;
+  border:0;border-radius:0;overflow:visible;background:none;
+  isolation:isolate;perspective:180px
 }
-.brand-mark i,.brand-mark b{display:none}
-html[data-theme="light"] .brand-mark{box-shadow:0 0 0 1px rgba(18,25,37,.18)}
-/* The mark is framed from the supplied board; live type stays readable at any zoom. */
-.home-brand-signature{display:flex;align-items:center;gap:18px;max-width:100%;margin:0 0 32px}
-.home-brand-icon{display:block;flex:none;width:108px;height:108px;border-radius:18px;
-  background:#0e131c url('/assets/life-in-the-simulation-brand-board.png?rev=20260923') no-repeat -266px -256px / 1014px 760px}
-.home-brand-words{display:flex;flex-direction:column;min-width:0;color:#f2f5f7;text-transform:uppercase}
-.home-brand-words>span{font-size:clamp(.8rem,1.8vw,1.25rem);font-weight:600;letter-spacing:.4em;line-height:1.2}
-.home-brand-words strong{font-size:clamp(1.6rem,4.1vw,3.1rem);font-weight:800;letter-spacing:.14em;line-height:1.08}
-.home-brand-words small{font-size:clamp(.58rem,1.1vw,.8rem);letter-spacing:.32em;line-height:1.8;color:#c7ced7}
-@media(max-width:560px){
-  .home-brand-signature{gap:9px;margin-bottom:24px}
-  .home-brand-icon{width:64px;height:64px;border-radius:12px;background-size:601px 451px;background-position:-158px -152px}
-  .home-brand-words>span{letter-spacing:.22em}
-  .home-brand-words strong{letter-spacing:.045em;font-size:clamp(1.15rem,5.5vw,1.8rem)}
-  .home-brand-words small{letter-spacing:.12em;font-size:.55rem}
+.brand-mark::before,.brand-mark::after,.brand-mark i{
+  content:"";position:absolute;top:7px;width:17px;height:32px;border-radius:3px;
+  transform:rotateY(-18deg) skewY(-1deg);
+  border:1px solid rgba(225,239,248,.55);
+  box-shadow:
+    inset 1px 0 0 rgba(255,255,255,.34),
+    inset -1px 0 0 rgba(255,255,255,.08),
+    0 5px 10px rgba(0,0,0,.18);
+  -webkit-backdrop-filter:blur(2px);backdrop-filter:blur(2px)
+}
+.brand-mark::before{
+  left:5px;z-index:1;
+  background:linear-gradient(145deg,rgba(34,211,166,.28),rgba(18,111,103,.08) 66%,rgba(255,255,255,.025))
+}
+.brand-mark i{
+  display:block;left:14px;z-index:2;
+  background:linear-gradient(145deg,rgba(139,92,246,.28),rgba(74,84,184,.09) 66%,rgba(255,255,255,.03))
+}
+.brand-mark::after{
+  left:23px;z-index:3;
+  background:linear-gradient(145deg,rgba(125,211,252,.20),rgba(154,168,255,.08) 62%,rgba(235,199,138,.08))
+}
+.brand-mark b{display:none}
+.brand-mark::after{border-right-color:rgba(236,205,153,.42)}
+html[data-theme="light"] .brand-mark::before,
+html[data-theme="light"] .brand-mark::after,
+html[data-theme="light"] .brand-mark i{
+  border-color:rgba(35,53,70,.28);
+  box-shadow:inset 1px 0 0 rgba(255,255,255,.68),0 4px 8px rgba(31,42,55,.10)
 }
 
-/* The homepage already shows the full logo in its opening section. */
+/* Homepage signature: same mark, enlarged, with live typography rather than a cropped image. */
+.home-brand-signature{
+  display:flex;align-items:center;gap:22px;max-width:100%;margin:0 0 34px
+}
+.home-brand-icon{
+  display:block;flex:none;width:112px;height:112px;position:relative;
+  isolation:isolate;perspective:320px
+}
+.home-brand-icon::before,.home-brand-icon::after,.home-brand-icon i{
+  content:"";position:absolute;top:16px;width:42px;height:80px;border-radius:6px;
+  transform:rotateY(-16deg) skewY(-.6deg);
+  border:1px solid rgba(228,240,248,.52);
+  box-shadow:
+    inset 1px 0 0 rgba(255,255,255,.42),
+    inset -1px 0 0 rgba(255,255,255,.07),
+    0 12px 24px rgba(0,0,0,.20);
+  -webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px)
+}
+.home-brand-icon::before{
+  left:4px;z-index:1;
+  background:linear-gradient(145deg,rgba(34,211,166,.25),rgba(16,91,86,.07) 68%,rgba(255,255,255,.025))
+}
+.home-brand-icon i{
+  display:block;left:31px;z-index:2;
+  background:linear-gradient(145deg,rgba(139,92,246,.26),rgba(67,74,162,.075) 68%,rgba(255,255,255,.025))
+}
+.home-brand-icon::after{
+  left:58px;z-index:3;
+  border-right-color:rgba(236,205,153,.46);
+  background:linear-gradient(145deg,rgba(125,211,252,.18),rgba(150,164,230,.06) 62%,rgba(235,199,138,.07))
+}
+.home-brand-icon::after,
+.brand-mark::after{filter:saturate(.82)}
+.home-brand-words{
+  display:flex;flex-direction:column;min-width:0;color:var(--text);text-transform:uppercase
+}
+.home-brand-words>span{
+  font-size:clamp(.78rem,1.65vw,1.14rem);font-weight:600;
+  letter-spacing:.42em;line-height:1.18
+}
+.home-brand-words strong{
+  font-size:clamp(1.75rem,4vw,3.15rem);font-weight:800;
+  letter-spacing:.12em;line-height:1.04
+}
+.home-brand-words small{
+  margin-top:6px;font:600 clamp(.56rem,.92vw,.73rem)/1.5 var(--mono);
+  letter-spacing:.29em;color:var(--muted)
+}
+
+/* The homepage already carries the full identity, so do not duplicate it in the sticky header. */
 .home .site-header{justify-content:flex-end}
 .home .site-header>.brand{display:none}
+
 @media(max-width:560px){
-  .brand-mark{background-size:385px 289px;background-position:-100px -97px}
+  .home-brand-signature{gap:12px;margin-bottom:26px}
+  .home-brand-icon{width:70px;height:70px}
+  .home-brand-icon::before,.home-brand-icon::after,.home-brand-icon i{
+    top:10px;width:27px;height:50px;border-radius:4px
+  }
+  .home-brand-icon::before{left:2px}
+  .home-brand-icon i{left:20px}
+  .home-brand-icon::after{left:38px}
+  .home-brand-words>span{letter-spacing:.22em;font-size:.68rem}
+  .home-brand-words strong{letter-spacing:.055em;font-size:clamp(1.18rem,5.7vw,1.85rem)}
+  .home-brand-words small{letter-spacing:.11em;font-size:.52rem;margin-top:4px}
 }
+
