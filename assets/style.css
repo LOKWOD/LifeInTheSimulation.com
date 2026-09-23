@@ -791,6 +791,8 @@ html[data-theme="light"] .archive-tools{background:rgba(241,240,235,.92)}
 .brand{
   width:228px;height:76px;flex:none;
   background:url('/assets/life-in-the-simulation-logo.webp?v=20260923c') center/contain no-repeat;
+  filter:contrast(1.5) brightness(1.06);
+  mix-blend-mode:screen;
 }
 .brand .brand-mark,.brand .brand-text{display:none!important}
 
@@ -800,6 +802,8 @@ html[data-theme="light"] .archive-tools{background:rgba(241,240,235,.92)}
   aspect-ratio:1025/391;
   margin:0 0 34px;
   background:url('/assets/life-in-the-simulation-logo.webp?v=20260923c') left center/contain no-repeat;
+  filter:contrast(1.5) brightness(1.06);
+  mix-blend-mode:screen;
 }
 .home-brand-signature>*{display:none!important}
 
