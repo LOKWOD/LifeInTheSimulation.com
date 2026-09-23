@@ -791,8 +791,8 @@ html[data-theme="light"] .archive-tools{background:rgba(241,240,235,.92)}
 .brand-mark{
   border:0;border-radius:8px;
   background-image:url('/assets/life-in-the-simulation-brand-board.png?rev=20260923');
-  background-repeat:no-repeat;background-size:550px 413px;
-  background-position:-148px -141px;
+  background-repeat:no-repeat;background-size:425px 319px;
+  background-position:-111px -107px;
 }
 .brand-mark i,.brand-mark b{display:none}
 html[data-theme="light"] .brand-mark{box-shadow:0 0 0 1px rgba(18,25,37,.18)}
@@ -810,4 +810,11 @@ html[data-theme="light"] .brand-mark{box-shadow:0 0 0 1px rgba(18,25,37,.18)}
   .home-brand-words>span{letter-spacing:.22em}
   .home-brand-words strong{letter-spacing:.045em;font-size:clamp(1.15rem,5.5vw,1.8rem)}
   .home-brand-words small{letter-spacing:.12em;font-size:.55rem}
+}
+
+/* The homepage already shows the full logo in its opening section. */
+.home .site-header{justify-content:flex-end}
+.home .site-header>.brand{display:none}
+@media(max-width:560px){
+  .brand-mark{background-size:385px 289px;background-position:-100px -97px}
 }
