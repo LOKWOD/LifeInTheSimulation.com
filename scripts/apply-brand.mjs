@@ -12,7 +12,7 @@ function walk(dir) {
       let html = readFileSync(path, 'utf8');
       html = html.replaceAll('Field notes from the rendered layer', 'Ideas for a clearer reality');
       if (path === join(root, 'index.html')) {
-        const signature = '<div class="home-brand-signature" aria-label="Life in the Simulation — Ideas for a clearer reality"><span class="home-brand-icon" aria-hidden="true"></span><span class="home-brand-words"><span>Life in the</span><strong>Simulation</strong><small>Ideas for a clearer reality</small></span></div>';
+        const signature = '<div class="home-brand-signature" aria-label="Life in the Simulation — Ideas for a clearer reality"><span class="home-brand-icon" aria-hidden="true"><i></i></span><span class="home-brand-words"><span>Life in the</span><strong>Simulation</strong><small>Ideas for a clearer reality</small></span></div>';
         html = html.includes('home-brand-signature')
           ? html.replace(/<div class="home-brand-signature"[^>]*>(?:<\/div>|[\s\S]*?<\/div>)/, signature)
           : html.replace('<div class="hero-copy">', `<div class="hero-copy">\n    ${signature}`);
