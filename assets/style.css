@@ -789,9 +789,17 @@ html[data-theme="light"] .archive-tools{background:rgba(241,240,235,.92)}
 
 /* Approved production logo — exact artwork supplied by the site owner. */
 .brand{
-  width:228px;height:76px;flex:none;
-  background:url('/assets/life-in-the-simulation-logo.webp?v=20260923c') center/contain no-repeat;
-  filter:contrast(1.5) brightness(1.06);
+  width:228px;height:76px;flex:none;position:relative;isolation:isolate;
+  background:none;filter:none;mix-blend-mode:normal;
+}
+.brand::before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:url('/assets/life-in-the-simulation-logo.webp?v=20260923d') center/contain no-repeat;
+  -webkit-mask-image:url('/assets/life-in-the-simulation-logo.webp?v=20260923d');
+  -webkit-mask-repeat:no-repeat;-webkit-mask-position:center;-webkit-mask-size:contain;
+  mask-image:url('/assets/life-in-the-simulation-logo.webp?v=20260923d');
+  mask-repeat:no-repeat;mask-position:center;mask-size:contain;mask-mode:luminance;
+  filter:contrast(1.55) brightness(1.08);
   mix-blend-mode:screen;
 }
 .brand .brand-mark,.brand .brand-text{display:none!important}
