@@ -83,6 +83,9 @@ const publicationDates = {
   ,"essays/system-includes-the-waiting-time.html": "2026-09-22"
   ,"guides/how-to-build-an-assumption-register.html": "2026-09-22"
   ,"guides/bluetooth-item-trackers-find-my-find-hub-tile.html": "2026-09-22"
+  ,"essays/attention-is-not-consciousness.html": "2026-09-25"
+  ,"guides/how-to-write-a-personal-runbook.html": "2026-09-25"
+  ,"guides/digital-photo-frames-local-cloud-smart-display.html": "2026-09-25"
 };
 
 const depth = {
@@ -138,6 +141,9 @@ topicDefs.find((topic) => topic.slug === "privacy-security").links.unshift("guid
 topicDefs.find((topic) => topic.slug === "attention-agency").links.unshift("essays/system-includes-the-waiting-time.html");
 topicDefs.find((topic) => topic.slug === "ai-knowledge").links.unshift("guides/how-to-build-an-assumption-register.html");
 topicDefs.find((topic) => topic.slug === "privacy-security").links.unshift("guides/bluetooth-item-trackers-find-my-find-hub-tile.html");
+topicDefs.find((topic) => topic.slug === "simulation-theory").links.unshift("essays/attention-is-not-consciousness.html");
+topicDefs.find((topic) => topic.slug === "attention-agency").links.unshift("guides/how-to-write-a-personal-runbook.html");
+topicDefs.find((topic) => topic.slug === "privacy-security").links.unshift("guides/digital-photo-frames-local-cloud-smart-display.html");
 
 function esc(value) { return String(value).replaceAll("&", "&amp;").replaceAll('"', "&quot;").replaceAll("<", "&lt;").replaceAll(">", "&gt;"); }
 function textOnly(value) { return value.replace(/<[^>]+>/g, " ").replace(/&(?:amp|#38);/g, "&").replace(/&(?:quot|#34);/g, '"').replace(/\s+/g, " ").trim(); }
@@ -207,6 +213,9 @@ function topicFor(rel, category, title) {
   if (rel === "essays/system-includes-the-waiting-time.html") return topicDefs[2];
   if (rel === "guides/how-to-build-an-assumption-register.html") return topicDefs[1];
   if (rel === "guides/bluetooth-item-trackers-find-my-find-hub-tile.html") return topicDefs[3];
+  if (rel === "essays/attention-is-not-consciousness.html") return topicDefs[0];
+  if (rel === "guides/how-to-write-a-personal-runbook.html") return topicDefs[2];
+  if (rel === "guides/digital-photo-frames-local-cloud-smart-display.html") return topicDefs[3];
   if (rel === "guides/reversibility-test-for-decisions.html") return topicDefs[2];
   if (rel === "guides/how-to-run-a-one-person-experiment.html" || rel === "guides/e-readers-kindle-kobo-boox-library.html") return topicDefs[2];
   if (/privacy|security|password|browser|dns|cloud-storage|data-minimization|threat-model/.test(hay)) return topicDefs[3];

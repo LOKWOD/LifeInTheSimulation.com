@@ -33,40 +33,12 @@ jobs:
         run: |
           rm -rf _site
           mkdir -p _site
-          cat .site-bundle/part-* | base64 --decode | tar -xz -C _site
+          cp -a CNAME .nojekyll *.html *.xml *.txt *.webmanifest assets essays guides topics _site/
           test -f _site/index.html
-          echo "Prepared $(find _site -type f | wc -l) base site files"
-      - name: Generate both expansion libraries
+          echo "Prepared $(find _site -type f | wc -l) current publication files"
+      - name: Generate today's source publication
         run: |
-          node scripts/generate-expansion.mjs _site
-          node scripts/generate-expansion-two.mjs _site
-          node scripts/publish-daily-2026-08-22.mjs _site
-          node scripts/publish-daily-2026-08-23.mjs _site
-          node scripts/publish-daily-2026-08-24.mjs _site
-          node scripts/publish-daily-2026-08-25.mjs _site
-          node scripts/publish-daily-2026-08-26.mjs _site
-          node scripts/publish-daily-2026-08-27.mjs _site
-          node scripts/publish-daily-2026-08-30.mjs _site
-          node scripts/publish-daily-2026-08-31.mjs _site
-          node scripts/publish-daily-2026-09-01.mjs _site
-          node scripts/publish-daily-2026-09-02.mjs _site
-          node scripts/publish-daily-2026-09-03.mjs _site
-          node scripts/publish-daily-2026-09-04.mjs _site
-          node scripts/publish-daily-2026-09-05.mjs _site
-          node scripts/publish-daily-2026-09-07.mjs _site
-          node scripts/publish-daily-2026-09-08.mjs _site
-          node scripts/publish-daily-2026-09-09.mjs _site
-          node scripts/publish-daily-2026-09-10.mjs _site
-          node scripts/publish-daily-2026-09-11.mjs _site
-          node scripts/publish-daily-2026-09-13.mjs _site
-          node scripts/publish-daily-2026-09-15.mjs _site
-          node scripts/publish-daily-2026-09-16.mjs _site
-          node scripts/publish-daily-2026-09-17.mjs _site
-          node scripts/publish-daily-2026-09-18.mjs _site
-          node scripts/publish-daily-2026-09-19.mjs _site
-          node scripts/publish-daily-2026-09-20.mjs _site
-          node scripts/publish-daily-2026-09-21.mjs _site
-          node scripts/publish-daily-2026-09-22.mjs _site
+          node scripts/publish-daily-2026-09-25.mjs _site
       - name: Apply durable SEO, trust and discovery layer
         run: |
           cp assets/style.css _site/assets/style.css
@@ -107,6 +79,7 @@ jobs:
         run: |
           node scripts/audit-daily-publication.mjs _site
           node scripts/audit-daily-2026-09-22.mjs _site
+          node scripts/audit-daily-2026-09-25.mjs _site
       - name: Install generated publication into main
         run: |
           cp -a _site/. .
