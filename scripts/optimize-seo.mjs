@@ -5,6 +5,7 @@ const root = path.resolve(process.argv[2] || ".");
 const SITE = "https://lifeinthesimulation.com";
 const EDITOR = "Life in the Simulation Editorial Desk";
 const EDITOR_URL = `${SITE}/editorial-policy.html`;
+const analytics = `<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "352a9195ed5342f9a8a9d244e13bddab"}'></script><!-- End Cloudflare Web Analytics -->`;
 
 const header = `<header class="site-header" data-site-header>
   <a class="brand" href="/" aria-label="Life in the Simulation home"><span class="brand-mark" aria-hidden="true"><i></i><b>L//S</b></span><span class="brand-text"><strong>Life in the Simulation</strong><small>Field notes from the rendered layer</small></span></a>
@@ -144,6 +145,9 @@ topicDefs.find((topic) => topic.slug === "privacy-security").links.unshift("guid
 topicDefs.find((topic) => topic.slug === "simulation-theory").links.unshift("essays/attention-is-not-consciousness.html");
 topicDefs.find((topic) => topic.slug === "attention-agency").links.unshift("guides/how-to-write-a-personal-runbook.html");
 topicDefs.find((topic) => topic.slug === "privacy-security").links.unshift("guides/digital-photo-frames-local-cloud-smart-display.html");
+topicDefs.find((topic) => topic.slug === "ai-knowledge").links.unshift("essays/the-average-is-not-the-experience.html");
+topicDefs.find((topic) => topic.slug === "privacy-security").links.unshift("guides/shared-access-without-shared-passwords.html");
+topicDefs.find((topic) => topic.slug === "attention-agency").links.unshift("guides/portable-monitors-usb-c-hdmi-wireless.html");
 
 function esc(value) { return String(value).replaceAll("&", "&amp;").replaceAll('"', "&quot;").replaceAll("<", "&lt;").replaceAll(">", "&gt;"); }
 function textOnly(value) { return value.replace(/<[^>]+>/g, " ").replace(/&(?:amp|#38);/g, "&").replace(/&(?:quot|#34);/g, '"').replace(/\s+/g, " ").trim(); }
@@ -216,6 +220,9 @@ function topicFor(rel, category, title) {
   if (rel === "essays/attention-is-not-consciousness.html") return topicDefs[0];
   if (rel === "guides/how-to-write-a-personal-runbook.html") return topicDefs[2];
   if (rel === "guides/digital-photo-frames-local-cloud-smart-display.html") return topicDefs[3];
+  if (rel === "essays/the-average-is-not-the-experience.html") return topicDefs[1];
+  if (rel === "guides/shared-access-without-shared-passwords.html") return topicDefs[3];
+  if (rel === "guides/portable-monitors-usb-c-hdmi-wireless.html") return topicDefs[2];
   if (rel === "guides/reversibility-test-for-decisions.html") return topicDefs[2];
   if (rel === "guides/how-to-run-a-one-person-experiment.html" || rel === "guides/e-readers-kindle-kobo-boox-library.html") return topicDefs[2];
   if (/privacy|security|password|browser|dns|cloud-storage|data-minimization|threat-model/.test(hay)) return topicDefs[3];
@@ -228,7 +235,7 @@ function pageShell({ rel, title, description, eyebrow, intro, body, schemaType =
   const canonical = pageUrl(rel);
   const schema = { "@context": "https://schema.org", "@type": schemaType, name: title, description, url: canonical, inLanguage: "en-US", isPartOf: { "@type": "WebSite", name: "Life in the Simulation", url: SITE } };
   const crumbs = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: `${SITE}/` }, { "@type": "ListItem", position: 2, name: title, item: canonical }] };
-  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#080a0f"><title>${esc(title)} | Life in the Simulation</title><meta name="description" content="${esc(description)}"><link rel="canonical" href="${canonical}"><link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><link rel="manifest" href="/site.webmanifest"><link rel="alternate" type="application/rss+xml" title="Life in the Simulation" href="/feed.xml"><link rel="stylesheet" href="/assets/style.css"><meta property="og:site_name" content="Life in the Simulation"><meta property="og:type" content="website"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(description)}"><meta property="og:url" content="${canonical}"><meta name="twitter:card" content="summary_large_image">${jsonScript(schema)}${jsonScript(crumbs)}</head><body><div class="ambient ambient-a" aria-hidden="true"></div><div class="ambient ambient-b" aria-hidden="true"></div><div class="noise" aria-hidden="true"></div><a class="skip-link" href="#main">Skip to content</a>${header}<main id="main"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><b>/</b><span aria-current="page">${esc(title)}</span></nav><section class="page-hero"><div class="page-hero-meta"><p class="eyebrow">${esc(eyebrow)}</p><span>CURATED PATH</span></div><h1>${esc(title)}</h1><p class="page-dek">${esc(intro)}</p></section>${body}</main>${footer}<script src="/assets/site.js" defer></script></body></html>`;
+  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#080a0f"><title>${esc(title)} | Life in the Simulation</title><meta name="description" content="${esc(description)}"><link rel="canonical" href="${canonical}"><link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><link rel="manifest" href="/site.webmanifest"><link rel="alternate" type="application/rss+xml" title="Life in the Simulation" href="/feed.xml"><link rel="stylesheet" href="/assets/style.css"><meta property="og:site_name" content="Life in the Simulation"><meta property="og:type" content="website"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(description)}"><meta property="og:url" content="${canonical}"><meta name="twitter:card" content="summary_large_image">${jsonScript(schema)}${jsonScript(crumbs)}</head><body><div class="ambient ambient-a" aria-hidden="true"></div><div class="ambient ambient-b" aria-hidden="true"></div><div class="noise" aria-hidden="true"></div><a class="skip-link" href="#main">Skip to content</a>${header}<main id="main"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><b>/</b><span aria-current="page">${esc(title)}</span></nav><section class="page-hero"><div class="page-hero-meta"><p class="eyebrow">${esc(eyebrow)}</p><span>CURATED PATH</span></div><h1>${esc(title)}</h1><p class="page-dek">${esc(intro)}</p></section>${body}</main>${footer}<script src="/assets/site.js" defer></script>${analytics}</body></html>`;
 }
 
 function buildNewPages() {
