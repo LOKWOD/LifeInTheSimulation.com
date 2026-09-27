@@ -148,6 +148,9 @@ topicDefs.find((topic) => topic.slug === "privacy-security").links.unshift("guid
 topicDefs.find((topic) => topic.slug === "ai-knowledge").links.unshift("essays/the-average-is-not-the-experience.html");
 topicDefs.find((topic) => topic.slug === "privacy-security").links.unshift("guides/shared-access-without-shared-passwords.html");
 topicDefs.find((topic) => topic.slug === "attention-agency").links.unshift("guides/portable-monitors-usb-c-hdmi-wireless.html");
+topicDefs.find((topic) => topic.slug === "ai-knowledge").links.unshift("essays/what-would-change-the-outcome-causal-claims.html");
+topicDefs.find((topic) => topic.slug === "attention-agency").links.unshift("guides/operational-handoff-checklist.html");
+topicDefs.find((topic) => topic.slug === "privacy-security").links.unshift("guides/webcams-built-in-usb-smartphone.html");
 
 function esc(value) { return String(value).replaceAll("&", "&amp;").replaceAll('"', "&quot;").replaceAll("<", "&lt;").replaceAll(">", "&gt;"); }
 function textOnly(value) { return value.replace(/<[^>]+>/g, " ").replace(/&(?:amp|#38);/g, "&").replace(/&(?:quot|#34);/g, '"').replace(/\s+/g, " ").trim(); }
@@ -223,6 +226,9 @@ function topicFor(rel, category, title) {
   if (rel === "essays/the-average-is-not-the-experience.html") return topicDefs[1];
   if (rel === "guides/shared-access-without-shared-passwords.html") return topicDefs[3];
   if (rel === "guides/portable-monitors-usb-c-hdmi-wireless.html") return topicDefs[2];
+  if (rel === "essays/what-would-change-the-outcome-causal-claims.html") return topicDefs[1];
+  if (rel === "guides/operational-handoff-checklist.html") return topicDefs[2];
+  if (rel === "guides/webcams-built-in-usb-smartphone.html") return topicDefs[3];
   if (rel === "guides/reversibility-test-for-decisions.html") return topicDefs[2];
   if (rel === "guides/how-to-run-a-one-person-experiment.html" || rel === "guides/e-readers-kindle-kobo-boox-library.html") return topicDefs[2];
   if (/privacy|security|password|browser|dns|cloud-storage|data-minimization|threat-model/.test(hay)) return topicDefs[3];
