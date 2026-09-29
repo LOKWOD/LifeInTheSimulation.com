@@ -1,5 +1,15 @@
 # Search Console editorial log
 
+# 2026-09-29 — coincidence signals, exception visibility and keyboard fit
+
+- Report used: generated 2026-09-23; Search Console window 2026-08-24 through 2026-09-20. At six days old, the report is current enough to inform the batch.
+- Site signal: 387 impressions, 3 clicks, 0.8% CTR and average position 47.7. The AI-books guide had 71 impressions, 1 click and position 46.8, outside the requested opportunity range and already supported by recent distinct AI-learning coverage.
+- Decision: publish no Data-led page. Strengthen the core evidence cluster with a coincidence audit, add an operational exception-log protocol, and explore the distinct commercial intent around keyboard mechanisms and workstation fit.
+- Deliberately ignored: the document-scanner page's 1 click from 4 impressions at position 5.2, one-to-nine-impression query fragments and the isolated RSS click. These samples are too small, unstable or adjacent to yesterday's printer coverage to redirect the portfolio.
+- Portfolio balance: two Authority-expansion pages and one Exploration page, spanning philosophical evidence, operational systems and computer hardware.
+- Authority action: published a seven-step coincidence signal check, ten-field exception record and twelve-field keyboard fit card; added six reciprocal contextual links and three hub discovery sections.
+- Outreach: none sent or logged. The reusable source-backed assets and internal crawl paths are more defensible than speculative pitching.
+
 # 2026-09-22 — delay, assumption testing and item-finding systems
 
 - Report used: generated 2026-09-16; Search Console window 2026-08-17 through 2026-09-13. At six days old, the report is current enough to inform the batch.

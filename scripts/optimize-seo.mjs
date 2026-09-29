@@ -162,6 +162,9 @@ topicDefs.find((topic) => topic.slug === "attention-agency").links.unshift("guid
 topicDefs.find((topic) => topic.slug === "privacy-security").links.unshift("guides/webcams-built-in-usb-smartphone.html");
 topicDefs.find((topic) => topic.slug === "ai-knowledge").links.unshift("essays/precision-is-not-accuracy.html", "guides/source-freshness-ledger.html");
 topicDefs.find((topic) => topic.slug === "privacy-security").links.unshift("guides/home-printers-laser-inkjet-ink-tank.html");
+topicDefs.find((topic) => topic.slug === "simulation-theory").links.unshift("essays/coincidence-is-not-automatically-a-signal.html");
+topicDefs.find((topic) => topic.slug === "attention-agency").links.unshift("guides/how-to-build-an-exception-log.html");
+topicDefs.find((topic) => topic.slug === "privacy-security").links.unshift("guides/keyboards-mechanical-scissor-membrane.html");
 
 function esc(value) { return String(value).replaceAll("&", "&amp;").replaceAll('"', "&quot;").replaceAll("<", "&lt;").replaceAll(">", "&gt;"); }
 function textOnly(value) { return value.replace(/<[^>]+>/g, " ").replace(/&(?:amp|#38);/g, "&").replace(/&(?:quot|#34);/g, '"').replace(/\s+/g, " ").trim(); }
@@ -242,6 +245,9 @@ function topicFor(rel, category, title) {
   if (rel === "guides/webcams-built-in-usb-smartphone.html") return topicDefs[3];
   if (rel === "essays/precision-is-not-accuracy.html" || rel === "guides/source-freshness-ledger.html") return topicDefs[1];
   if (rel === "guides/home-printers-laser-inkjet-ink-tank.html") return topicDefs[3];
+  if (rel === "essays/coincidence-is-not-automatically-a-signal.html") return topicDefs[0];
+  if (rel === "guides/how-to-build-an-exception-log.html") return topicDefs[2];
+  if (rel === "guides/keyboards-mechanical-scissor-membrane.html") return topicDefs[3];
   if (rel === "guides/reversibility-test-for-decisions.html") return topicDefs[2];
   if (rel === "guides/how-to-run-a-one-person-experiment.html" || rel === "guides/e-readers-kindle-kobo-boox-library.html") return topicDefs[2];
   if (/privacy|security|password|browser|dns|cloud-storage|data-minimization|threat-model/.test(hay)) return topicDefs[3];
