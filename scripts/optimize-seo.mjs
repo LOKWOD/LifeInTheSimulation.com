@@ -165,6 +165,9 @@ topicDefs.find((topic) => topic.slug === "privacy-security").links.unshift("guid
 topicDefs.find((topic) => topic.slug === "simulation-theory").links.unshift("essays/coincidence-is-not-automatically-a-signal.html");
 topicDefs.find((topic) => topic.slug === "attention-agency").links.unshift("guides/how-to-build-an-exception-log.html");
 topicDefs.find((topic) => topic.slug === "privacy-security").links.unshift("guides/keyboards-mechanical-scissor-membrane.html");
+topicDefs.find((topic) => topic.slug === "simulation-theory").links.unshift("essays/outlier-is-not-automatically-an-error.html");
+topicDefs.find((topic) => topic.slug === "attention-agency").links.unshift("guides/how-to-build-a-personal-error-budget.html");
+topicDefs.find((topic) => topic.slug === "privacy-security").links.unshift("guides/power-strip-vs-surge-protector-vs-whole-home-spd.html");
 
 function esc(value) { return String(value).replaceAll("&", "&amp;").replaceAll('"', "&quot;").replaceAll("<", "&lt;").replaceAll(">", "&gt;"); }
 function textOnly(value) { return value.replace(/<[^>]+>/g, " ").replace(/&(?:amp|#38);/g, "&").replace(/&(?:quot|#34);/g, '"').replace(/\s+/g, " ").trim(); }
@@ -248,6 +251,9 @@ function topicFor(rel, category, title) {
   if (rel === "essays/coincidence-is-not-automatically-a-signal.html") return topicDefs[0];
   if (rel === "guides/how-to-build-an-exception-log.html") return topicDefs[2];
   if (rel === "guides/keyboards-mechanical-scissor-membrane.html") return topicDefs[3];
+  if (rel === "essays/outlier-is-not-automatically-an-error.html") return topicDefs[0];
+  if (rel === "guides/how-to-build-a-personal-error-budget.html") return topicDefs[2];
+  if (rel === "guides/power-strip-vs-surge-protector-vs-whole-home-spd.html") return topicDefs[3];
   if (rel === "guides/reversibility-test-for-decisions.html") return topicDefs[2];
   if (rel === "guides/how-to-run-a-one-person-experiment.html" || rel === "guides/e-readers-kindle-kobo-boox-library.html") return topicDefs[2];
   if (/privacy|security|password|browser|dns|cloud-storage|data-minimization|threat-model/.test(hay)) return topicDefs[3];
