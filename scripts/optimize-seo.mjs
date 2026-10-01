@@ -168,6 +168,9 @@ topicDefs.find((topic) => topic.slug === "privacy-security").links.unshift("guid
 topicDefs.find((topic) => topic.slug === "simulation-theory").links.unshift("essays/outlier-is-not-automatically-an-error.html");
 topicDefs.find((topic) => topic.slug === "attention-agency").links.unshift("guides/how-to-build-a-personal-error-budget.html");
 topicDefs.find((topic) => topic.slug === "privacy-security").links.unshift("guides/power-strip-vs-surge-protector-vs-whole-home-spd.html");
+topicDefs.find((topic) => topic.slug === "ai-knowledge").links.unshift("essays/transparent-is-not-understandable.html");
+topicDefs.find((topic) => topic.slug === "privacy-security").links.unshift("guides/paper-to-digital-intake-workflow.html");
+topicDefs.find((topic) => topic.slug === "attention-agency").links.unshift("guides/computer-mice-standard-vertical-trackball.html");
 
 function esc(value) { return String(value).replaceAll("&", "&amp;").replaceAll('"', "&quot;").replaceAll("<", "&lt;").replaceAll(">", "&gt;"); }
 function textOnly(value) { return value.replace(/<[^>]+>/g, " ").replace(/&(?:amp|#38);/g, "&").replace(/&(?:quot|#34);/g, '"').replace(/\s+/g, " ").trim(); }

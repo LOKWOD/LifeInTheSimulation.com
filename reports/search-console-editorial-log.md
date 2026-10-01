@@ -1,5 +1,15 @@
 # Search Console editorial log
 
+# 2026-10-01 — legibility, paper intake and pointing-device fit
+
+- Report used: generated 2026-09-30; Search Console window 2026-08-31 through 2026-09-27.
+- Site signal: 414 impressions, 4 clicks, 1.0% CTR and average position 45.5. The document-scanner guide had 8 impressions, 1 click, 12.5% CTR and average position 5.1.
+- Decision: use that small but relevant page-one signal for one distinct supporting workflow about intake, OCR, quality control, naming, backup and disposition. The existing scanner page retains the buying-guide intent.
+- Deliberately ignored: the AI-books guide's 30 impressions at position 44.9, one-to-nine-impression query fragments and dreams terms at positions 48–58. These signals are too weak, poorly ranked or too close to existing coverage to justify new pages.
+- Portfolio balance: one Data-led workflow, one Authority-expansion systems essay and one Exploration hardware guide, spanning different formats, problems and query families.
+- Authority action: published a six-layer legibility model, eight-field paper-intake record and nine-field pointing-device buying card; added six reciprocal contextual links and three hub paths.
+- Outreach: none sent or logged. The source-backed assets and crawl-path improvements were higher-confidence authority work than speculative pitching.
+
 # 2026-09-29 — coincidence signals, exception visibility and keyboard fit
 
 - Report used: generated 2026-09-23; Search Console window 2026-08-24 through 2026-09-20. At six days old, the report is current enough to inform the batch.
