@@ -171,6 +171,9 @@ topicDefs.find((topic) => topic.slug === "privacy-security").links.unshift("guid
 topicDefs.find((topic) => topic.slug === "ai-knowledge").links.unshift("essays/transparent-is-not-understandable.html");
 topicDefs.find((topic) => topic.slug === "privacy-security").links.unshift("guides/paper-to-digital-intake-workflow.html");
 topicDefs.find((topic) => topic.slug === "attention-agency").links.unshift("guides/computer-mice-standard-vertical-trackball.html");
+topicDefs.find((topic) => topic.slug === "ai-knowledge").links.unshift("essays/threshold-is-a-policy-choice.html");
+topicDefs.find((topic) => topic.slug === "privacy-security").links.unshift("guides/before-you-paste-into-ai-data-boundary.html");
+topicDefs.find((topic) => topic.slug === "attention-agency").links.unshift("guides/indoor-air-quality-monitors-without-hype.html");
 
 function esc(value) { return String(value).replaceAll("&", "&amp;").replaceAll('"', "&quot;").replaceAll("<", "&lt;").replaceAll(">", "&gt;"); }
 function textOnly(value) { return value.replace(/<[^>]+>/g, " ").replace(/&(?:amp|#38);/g, "&").replace(/&(?:quot|#34);/g, '"').replace(/\s+/g, " ").trim(); }
@@ -210,6 +213,9 @@ function titleFromFile(rel) {
 }
 function topicFor(rel, category, title) {
   const hay = `${rel} ${category} ${title}`.toLowerCase();
+  if (rel === "essays/threshold-is-a-policy-choice.html") return topicDefs[1];
+  if (rel === "guides/before-you-paste-into-ai-data-boundary.html") return topicDefs[3];
+  if (rel === "guides/indoor-air-quality-monitors-without-hype.html") return topicDefs[2];
   if (rel === "essays/self-model-is-not-a-fake-self.html") return topicDefs[0];
   if (rel === "essays/preference-is-not-a-value.html") return topicDefs[2];
   if (rel === "guides/how-to-write-an-ai-decision-record.html") return topicDefs[1];
