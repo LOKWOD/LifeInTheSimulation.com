@@ -174,6 +174,9 @@ topicDefs.find((topic) => topic.slug === "attention-agency").links.unshift("guid
 topicDefs.find((topic) => topic.slug === "ai-knowledge").links.unshift("essays/threshold-is-a-policy-choice.html");
 topicDefs.find((topic) => topic.slug === "privacy-security").links.unshift("guides/before-you-paste-into-ai-data-boundary.html");
 topicDefs.find((topic) => topic.slug === "attention-agency").links.unshift("guides/indoor-air-quality-monitors-without-hype.html");
+topicDefs.find((topic) => topic.slug === "ai-knowledge").links.unshift("essays/category-is-not-a-cause.html");
+topicDefs.find((topic) => topic.slug === "privacy-security").links.unshift("guides/digital-change-log-before-troubleshooting.html");
+topicDefs.find((topic) => topic.slug === "attention-agency").links.unshift("guides/water-leak-sensors-point-cable-shutoff.html");
 
 function esc(value) { return String(value).replaceAll("&", "&amp;").replaceAll('"', "&quot;").replaceAll("<", "&lt;").replaceAll(">", "&gt;"); }
 function textOnly(value) { return value.replace(/<[^>]+>/g, " ").replace(/&(?:amp|#38);/g, "&").replace(/&(?:quot|#34);/g, '"').replace(/\s+/g, " ").trim(); }
@@ -212,6 +215,9 @@ function titleFromFile(rel) {
   return textOnly((html.match(/<h1\b[^>]*>([\s\S]*?)<\/h1>/i) || [,"Untitled"])[1]);
 }
 function topicFor(rel, category, title) {
+  if (rel === "essays/category-is-not-a-cause.html") return topicDefs[1];
+  if (rel === "guides/digital-change-log-before-troubleshooting.html") return topicDefs[3];
+  if (rel === "guides/water-leak-sensors-point-cable-shutoff.html") return topicDefs[2];
   const hay = `${rel} ${category} ${title}`.toLowerCase();
   if (rel === "essays/threshold-is-a-policy-choice.html") return topicDefs[1];
   if (rel === "guides/before-you-paste-into-ai-data-boundary.html") return topicDefs[3];

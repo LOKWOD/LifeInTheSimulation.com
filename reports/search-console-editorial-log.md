@@ -1,5 +1,15 @@
 # Search Console editorial log
 
+# 2026-10-03 — categories, change state and leak response
+
+- Report used: generated 2026-09-30; Search Console window 2026-08-31 through 2026-09-27.
+- Site signal: 414 impressions, 4 clicks, 1.0% CTR and average position 45.5. The document-scanner guide's 8 impressions at position 5.1 were already reinforced on October 1 by the distinct paper-intake workflow.
+- Decision: publish no Data-led page. The remaining visible opportunities were either already addressed, outside positions 4–20 or too small to justify another close variant.
+- Deliberately ignored: the AI-books page's 30 impressions at position 44.9, the two-impression “assumption register” query at position 9.5, and one-to-nine-impression fragments. They are too weak, poorly ranked or already served to steer a new page.
+- Portfolio balance: one Authority-expansion evidence essay, one Authority-expansion operational field guide and one Exploration technology guide. The three address classification, reconstructable system change and household water response—different formats, problems and query families.
+- Authority action: published a four-job category matrix and six-part category-cause audit, a ten-field digital change record, and a four-path leak-detection comparison with response-chain card; added six reciprocal contextual links and three durable topic-hub entries.
+- Outreach: none sent or logged. The source-backed reference assets and crawl-path improvements were more specific and useful than speculative pitching.
+
 # 2026-10-01 — legibility, paper intake and pointing-device fit
 
 - Report used: generated 2026-09-30; Search Console window 2026-08-31 through 2026-09-27.
