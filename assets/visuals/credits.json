@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-03",
+  "generated": "2026-10-04",
   "assets": [
     {
       "path": "/assets/visuals/dream-evidence-filter.svg",
@@ -597,6 +597,24 @@
     },
     {
       "path": "/assets/visuals/water-leak-sensors-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original AI-assisted conceptual editorial image generated specifically for this page; not documentary, measurement, archive, product or hands-on test imagery",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/peer-review-filter-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original AI-assisted conceptual editorial image generated specifically for this page; not documentary, measurement, archive, product or hands-on test imagery",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/ai-critic-protocol-editorial.webp",
+      "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
+      "source": "Original AI-assisted conceptual editorial image generated specifically for this page; not documentary, measurement, archive, product or hands-on test imagery",
+      "license": "Copyright Life in the Simulation"
+    },
+    {
+      "path": "/assets/visuals/smart-plug-architectures-editorial.webp",
       "creator": "Life in the Simulation Editorial Desk with OpenAI image generation",
       "source": "Original AI-assisted conceptual editorial image generated specifically for this page; not documentary, measurement, archive, product or hands-on test imagery",
       "license": "Copyright Life in the Simulation"

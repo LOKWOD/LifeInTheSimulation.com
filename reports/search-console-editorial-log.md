@@ -1,5 +1,16 @@
 # Search Console editorial log
 
+# 2026-10-04 — review filters, human authorship and outlet control
+
+- Report used: generated 2026-09-30; Search Console window 2026-08-31 through 2026-09-27.
+- Site signal: 414 impressions, 4 clicks, 1.0% CTR and average position 45.5. The scanner guide's 8 impressions at position 5.1 were already reinforced on October 1 by the distinct paper-intake workflow.
+- Decision: publish no Data-led page. Strengthen scientific-literacy and human-authorship clusters, then explore the distinct commercial intent around smart-plug architecture.
+- Discovery response: the report's sitemap row showed 140 submitted and zero indexed, but property-level impressions and clicks conflict with a literal zero. The batch adds homepage, archive, topic-hub and six reciprocal crawl paths rather than treating the row as proof of total exclusion.
+- Deliberately ignored: the AI-books page's 30 impressions at position 44.9, the two-impression “assumption register” query at position 9.5, dreams terms at positions 48–58 and one-to-nine-impression fragments. They are outside the target range, already served or too weak to redirect the batch.
+- Portfolio balance: two Authority-expansion pages and one Exploration page spanning scientific evidence, AI-assisted writing and connected-home technology.
+- Authority action: published a peer-review evidence matrix and seven-pass audit, a reusable AI critic packet, and a five-path smart-plug comparison with purchase test; added six reciprocal contextual links and three topic-hub entries.
+- Outreach: none sent or logged. The source-backed reference assets and crawl improvements are more specific than speculative pitching.
+
 # 2026-10-03 — categories, change state and leak response
 
 - Report used: generated 2026-09-30; Search Console window 2026-08-31 through 2026-09-27.
