@@ -106,3 +106,12 @@
 - Portfolio balance: two Authority-expansion pages and one Exploration page. The pages differ in intent, format and primary problem: interpreting negative evidence, mapping cascading dependencies, and choosing a camera-storage architecture.
 - Authority action: published a reusable negative-result interpretation matrix, a seven-layer dependency worksheet, a four-path camera-storage decision matrix and six reciprocal contextual links. These strengthen Measurement & Evidence and Privacy & Security without manufacturing outreach.
 - Outreach: none sent or logged; no target was specific enough to beat the value of the primary-source assets and internal cluster improvements.
+# 2026-10-05 — consciousness evidence, postmortem learning and portable power
+
+- Report used: generated 2026-09-30; Search Console window 2026-08-31 through 2026-09-27.
+- Site signal: 414 impressions, 4 clicks, 0.97% CTR and average position 45.48. The document-scanner guide's 8 impressions, 1 click and position 5.125 remain the only credible position-4–20 page signal, and it was already reinforced on October 1 by a distinct paper-intake workflow.
+- Decision: publish no Data-led page and avoid another scanner-adjacent URL. Expand authority with a consciousness evidence ladder and an operational postmortem system, then explore the distinct commercial intent around power-bank compatibility and safety.
+- Deliberately ignored: the AI-books guide's 30 impressions at position 44.93, two impressions for the assumption-register query at position 9.5, dreams terms around positions 48–58, and other one-to-nine-impression fragments. These are too weak, poorly ranked or already covered to redirect the batch.
+- Portfolio balance: two Authority-expansion pages and one Exploration page across consciousness science, operational systems and portable hardware.
+- Authority action: published a multi-channel consciousness evidence ladder, a one-page postmortem record with 30-day close and an eight-line power-bank decision card; added six reciprocal contextual links and three topic-hub paths.
+- Outreach: none sent or logged. The primary-source assets and cluster improvements were higher-confidence authority work than speculative pitching.

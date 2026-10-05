@@ -180,6 +180,9 @@ topicDefs.find((topic) => topic.slug === "attention-agency").links.unshift("guid
 topicDefs.find((topic) => topic.slug === "ai-knowledge").links.unshift("essays/peer-review-is-a-filter-not-a-guarantee.html");
 topicDefs.find((topic) => topic.slug === "attention-agency").links.unshift("guides/use-ai-as-a-critic-not-a-ghostwriter.html");
 topicDefs.find((topic) => topic.slug === "privacy-security").links.unshift("guides/smart-plugs-wifi-matter-thread-zigbee-timer.html");
+topicDefs.find((topic) => topic.slug === "simulation-theory").links.unshift("essays/there-is-no-single-test-for-consciousness.html");
+topicDefs.find((topic) => topic.slug === "attention-agency").links.unshift("guides/how-to-run-a-blameless-postmortem.html");
+topicDefs.find((topic) => topic.slug === "privacy-security").links.unshift("guides/power-banks-usb-c-pd-capacity-airline-safety.html");
 
 function esc(value) { return String(value).replaceAll("&", "&amp;").replaceAll('"', "&quot;").replaceAll("<", "&lt;").replaceAll(">", "&gt;"); }
 function textOnly(value) { return value.replace(/<[^>]+>/g, " ").replace(/&(?:amp|#38);/g, "&").replace(/&(?:quot|#34);/g, '"').replace(/\s+/g, " ").trim(); }
@@ -221,6 +224,9 @@ function topicFor(rel, category, title) {
   if (rel === "essays/peer-review-is-a-filter-not-a-guarantee.html") return topicDefs[1];
   if (rel === "guides/use-ai-as-a-critic-not-a-ghostwriter.html") return topicDefs[2];
   if (rel === "guides/smart-plugs-wifi-matter-thread-zigbee-timer.html") return topicDefs[3];
+  if (rel === "essays/there-is-no-single-test-for-consciousness.html") return topicDefs[0];
+  if (rel === "guides/how-to-run-a-blameless-postmortem.html") return topicDefs[2];
+  if (rel === "guides/power-banks-usb-c-pd-capacity-airline-safety.html") return topicDefs[3];
   if (rel === "essays/category-is-not-a-cause.html") return topicDefs[1];
   if (rel === "guides/digital-change-log-before-troubleshooting.html") return topicDefs[3];
   if (rel === "guides/water-leak-sensors-point-cable-shutoff.html") return topicDefs[2];
